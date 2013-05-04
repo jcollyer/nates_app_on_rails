@@ -12,12 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree ./lib
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require moment
+//= require ./setup
+//= require ./player
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
+//= require_tree ./helpers
+//= require_tree ./templates
+//= require_tree ./routes
 //= require_self
-//= require app
-App = Ember.Application.create();
-
-
