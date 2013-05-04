@@ -8,10 +8,15 @@ class Api::LessonPresenter
 
 	def as_json(options = {})
  		{
- 			:lesson => {
- 				:title => lesson.title,
- 				:summary => lesson.summary
- 			}
+ 			:lesson => lesson_hash
  		}
+	end
+
+	def lesson_hash
+		{
+			:id => lesson.id,
+			:title => lesson.title,
+			:summary => lesson.summary
+		}
 	end
 end

@@ -14,10 +14,7 @@ class Api::LessonsPresenter
 
 	def lessons_array
 		lessons.map do |lesson|
-			{
-				:title => lesson.title,
-				:summary => lesson.summary
-			}
+			Api::LessonPresenter.new(lesson).lesson_hash
 		end
 	end
 end
