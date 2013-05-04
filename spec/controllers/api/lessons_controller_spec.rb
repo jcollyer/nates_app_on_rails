@@ -36,4 +36,58 @@ describe Api::LessonsController do
 			expect(decoded_body["lesson"]).to be_present
 		end
 	end
+
+	describe "POST to :create" do
+		def create_lesson
+			post :create, :lesson => {:title => "Foo Title", :summary => "Foo Summary"}
+		end
+
+		it "responds created" do
+			create_lesson
+			expect(response.status).to eq(201)
+		end
+
+		it "creates lesson" do
+			expect { create_lesson }.to change { Lesson.count }.by(1)
+		end
+
+		it "returns lesson hash" do
+			create_lesson
+			expect(decoded_body["lesson"]).to be_present
+		end
+	end
+
+	describe "PUT to :update" do
+		before do
+			put :update, {:id => lesson.id, :lesson => {:title => "HAHAHA"}}
+		end
+
+		it "responds accepted" do
+			expect(response.status).to eq(202)
+		end
+
+		it "updates the lesson" do
+			expect(lesson.reload.title).to eq("HAHAHA")
+		end
+
+		it "returns lesson hash" do
+			expect(decoded_body["lesson"]).to be_present
+		end
+	end
+
+	describe "DELETE to :destroy" do
+		def destroy_lesson
+			delete :destroy, :id => lesson.id
+		end
+
+		it "responds accepted" do
+			destroy_lesson
+			expect(response.status).to eq(202)
+		end
+
+		it "destroys lesson" do
+			expect { destroy_lesson }.to change { Lesson.count }.by(-1)
+		end
+	end
+
 end
