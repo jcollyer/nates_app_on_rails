@@ -1,3 +1,7 @@
 class Lesson < ActiveRecord::Base
-  attr_accessible :summary, :title
+  # Public: Title of the lesson.
+  # column :title
+
+  # Public: Summary of the lesson.
+  # column :summary
 end
