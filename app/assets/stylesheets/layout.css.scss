@@ -1,0 +1,279 @@
+$font-body: 'junction', sans-serif;
+$font-heading: 'raleway', sans-serif;
+$font-style: 'Satisfy', cursive;
+
+body{
+  background:#0ca7d3;
+  color:#333;
+  font-family:$font-body;
+  font-size: 110%;
+}
+
+.row {
+  width:100%;
+  margin:0px auto; 
+  .columns{
+    padding:5px;
+  }
+}
+
+h1{
+  font-family:"raleway", Georgia, serif;
+  font-weight:400;
+  color:white;
+}
+
+h2{
+  font-family:$font-heading;
+  font-weight:400;
+  letter-spacing:-1px;
+}
+
+h3{
+  font-family:$font-heading;
+}
+
+a{
+  text-decoration:none;
+  color:#444;
+}
+
+.hh1{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:170%;
+  margin:0px;
+}
+
+.hh2{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:130%;
+  margin:0px;
+}
+
+.hh3{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:220%;
+  margin:0 0 30px 0;
+}
+
+
+.container {
+}
+
+.page_header{
+  .page_header_info_one{
+    padding:85px 0 0 0;
+  }
+  .page_header_info_two{
+
+  }
+}
+
+.home_lessons_link{
+  border:1px solid #eee;
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  padding:20px 80px;
+  &:hover{
+    background:#eee;
+    color:#222;
+  }
+}
+.home_page_lessons{
+
+}
+
+#nav_container{
+    background:#222;
+  #nav_main{
+    clear:both;
+    font-family:"raleway", Georgia, serif;
+    font-size:80%;
+    height:47px;
+    list-style-type:none;
+    margin:0px;
+    text-align:center;
+    li{
+      border-left:1px solid #333;
+      float:right;
+      width:120px;
+      a{
+        color:#eee;
+        display:block;
+        padding:16px 0;
+        &:hover{
+          background:#2f2f2f;
+        }
+      }
+      &.left_link{
+        border:none;
+        float:left;
+        a{
+          &:hover{
+            background:#222;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section {
+  padding:0px 20px;
+  max-width:1040px;
+  margin:0 auto 100px;
+  min-height: 300px;
+  width:80%
+}
+
+.page_quote{
+  display:none;
+  font-family: $font-heading;
+  height:180px;  
+  left:20px;
+  position:absolute;
+  text-align: center;
+  top:-220px;
+  width:360px;
+  .sun_css{
+    background: #fbf62a;
+    border-radius: 150px;
+    bottom:-54px;
+    height:200px;
+    left:-80px;
+    position: absolute;
+    width:200px;
+    z-index: 8;
+  }
+  .path_css{
+    background:#333;
+    border-radius:100px;
+    bottom:0px;
+    height:70px;
+    position:absolute;
+    right:5px;
+    width:120px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(150deg);
+    &:before{
+      border-top: 270px solid #333;
+      border-left: 200px solid transparent;
+      content:"";
+      left:-140px;
+      height: 0;
+      position:absolute;
+      top:-200px;
+      width: 0;
+    } 
+  }
+  .quote_container{
+    position: absolute;
+    z-index: 9;
+    h1{
+      color:#444;
+      font-size:140%;
+      font-weight: bold;
+      line-height: 1.1em;
+      margin:0px;
+      text-transform: uppercase;
+    }
+    h2{
+      color:#444;
+      font-size:260%;
+      font-style: italic;
+      line-height: 0.9em;
+      margin:0px;
+    }
+    h3{
+      color:#444;
+      font-size: 200%;
+      letter-spacing: 1px;
+      line-height: 1em;
+      margin:0px;
+      text-transform: uppercase; 
+    }
+  } 
+}
+
+.footer{
+  margin:0 0 20px 0;
+  width:100%;
+  padding:0px 0 0 0;
+  position: relative;
+  z-index:98;
+  .footer_content_container{
+    height:400px;
+    position:relative;
+    z-index:9;
+    .footer_content{
+      margin:0 0 0px 0;
+      .footer_content_header{
+        background: #222;
+        color:#eee;
+        padding:5px;
+      }
+      .footer_content_body{
+        background:#fff;
+        padding:10px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .lesson_mod{
+    height:auto;
+    .lesson_mod_menu{
+      .lesson_mod_controls{
+        height:120px;
+        width:68%;
+      }
+      .lesson_mod_info{
+        width:90%;
+      } 
+    }
+  }  
+  .nav_container{
+    margin:100px 0 0 0;
+  }
+  .section{
+    width:97%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.lesson_show_back{
+  background:url(/images/crying_out_to_god.jpg) right top no-repeat;
+  background-size:100%;
+  background-position:0 -100px;
+  -moz-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height:100%;
+  width:100%;
+  position:absolute;
+  &:after{
+    content:"";
+    background:rgba(255,255,255,0.6);
+    height:100%;
+    left:0px;
+    top:0px;
+    width:100%;
+    position:absolute;
+  }
+}
+
+
+
