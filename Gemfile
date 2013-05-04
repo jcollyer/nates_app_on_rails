@@ -16,4 +16,5 @@ group :test do
 	gem "rspec-rails"
 	gem "guard-rspec"
 	gem "guard-livereload"
+	gem "machinist"
 end
