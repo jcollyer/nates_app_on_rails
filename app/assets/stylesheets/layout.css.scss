@@ -21,16 +21,19 @@ h1{
   font-family:"raleway", Georgia, serif;
   font-weight:400;
   color:white;
+  margin:5px;
 }
 
 h2{
   font-family:$font-heading;
   font-weight:400;
   letter-spacing:-1px;
+  margin:5px;
 }
 
 h3{
   font-family:$font-heading;
+  margin:0px;
 }
 
 a{
@@ -181,7 +184,6 @@ a{
       font-size:140%;
       font-weight: bold;
       line-height: 1.1em;
-      margin:0px;
       text-transform: uppercase;
     }
     h2{
@@ -189,39 +191,60 @@ a{
       font-size:260%;
       font-style: italic;
       line-height: 0.9em;
-      margin:0px;
     }
     h3{
       color:#444;
       font-size: 200%;
       letter-spacing: 1px;
       line-height: 1em;
-      margin:0px;
       text-transform: uppercase;
     }
   }
 }
 
 .footer{
-  margin:0 0 20px 0;
+  margin:0 0 100px 0;
   width:100%;
   padding:0px 0 0 0;
   position: relative;
   z-index:98;
   .footer_content_container{
-    height:400px;
     position:relative;
     z-index:9;
     .footer_content{
       margin:0 0 0px 0;
       .footer_content_header{
-        background: #222;
-        color:#eee;
-        padding:5px;
+        background: #fff;
+        padding:5px 5px 5px 3%;
+        h1 {color:#ccc;}
       }
       .footer_content_body{
-        background:#fff;
-        padding:10px;
+        background:#999;
+        max-width:80em;
+        text-align:center;
+        a{
+          color:#ccc;
+          display:block;
+          padding:10px;
+          &:hover{
+            background:#eee;
+          }
+        }
+        .footer_link{
+          border-left:1px solid #ccc;
+          padding:0px;
+        }
+        .footer_link:first-child{border:none;}
+        .footer_social{
+          color:white;
+          max-width:80em;
+          .footer_social_facebook{background:#3B5998;}
+          .footer_social_twitter{background:#4099FF;}
+          .footer_social_google{background:#d34836;}
+          .footer_social_box{
+            padding:18px;
+          }
+        }
       }
     }
   }
