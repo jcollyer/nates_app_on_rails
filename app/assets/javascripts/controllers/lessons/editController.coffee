@@ -1,4 +1,4 @@
-App.LessonsEditController = Em.ObjectController.exted
+App.LessonsEditController = Em.ObjectController.extend
 	save: ->
 		@store.commit()
 		@transitionToRoute 'lessons.show', @content
