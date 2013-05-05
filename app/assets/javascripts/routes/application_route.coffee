@@ -1,5 +1,5 @@
 App.Router.map ->
-  @resource "home"
+  @resource "home", path: '/'
   @resource "about"
   @resource "lessons", ->
     @route "new"

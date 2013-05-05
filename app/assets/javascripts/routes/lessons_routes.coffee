@@ -1,9 +1,8 @@
-
-App.LessonsIndexRoute = Ember.Route.extend
+App.LessonsIndexRoute = Em.Route.extend
   model: ->
     App.Lesson.find()
 
-App.LessonsShowRoute = Ember.Route.extend
+App.LessonsShowRoute = Em.Route.extend
 	model: (params) ->
 		App.Lesson.find(params.lesson_id)
 
