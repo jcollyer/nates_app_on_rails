@@ -12,3 +12,9 @@ App.LessonsNewRoute = Em.Route.extend
   setupController: (controller, model) ->
     @_super()
     controller.set('content', model)
+
+App.LessonsEditRoute = Em.Route.extend
+	model: (params) ->
+		App.Lesson.find(params.lesson_id)
+
+

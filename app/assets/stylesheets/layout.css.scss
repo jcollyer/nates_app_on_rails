@@ -11,7 +11,7 @@ body{
 
 .row {
   width:100%;
-  margin:0px auto; 
+  margin:0px auto;
   .columns{
     padding:5px;
   }
@@ -100,6 +100,9 @@ a{
       border-left:1px solid #333;
       float:right;
       width:120px;
+      .active{
+        background:#444;
+      }
       a{
         color:#eee;
         display:block;
@@ -132,7 +135,7 @@ a{
 .page_quote{
   display:none;
   font-family: $font-heading;
-  height:180px;  
+  height:180px;
   left:20px;
   position:absolute;
   text-align: center;
@@ -168,7 +171,7 @@ a{
       position:absolute;
       top:-200px;
       width: 0;
-    } 
+    }
   }
   .quote_container{
     position: absolute;
@@ -194,9 +197,9 @@ a{
       letter-spacing: 1px;
       line-height: 1em;
       margin:0px;
-      text-transform: uppercase; 
+      text-transform: uppercase;
     }
-  } 
+  }
 }
 
 .footer{
@@ -235,9 +238,9 @@ a{
       }
       .lesson_mod_info{
         width:90%;
-      } 
+      }
     }
-  }  
+  }
   .nav_container{
     margin:100px 0 0 0;
   }

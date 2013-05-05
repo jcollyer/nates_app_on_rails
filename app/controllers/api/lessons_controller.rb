@@ -28,8 +28,14 @@ class Api::LessonsController < ApplicationController
 
 	def destroy
 		lesson = Lesson.find(params[:id])
-		lesson.destroy
-		render :nothing => true, :status => :accepted
+		if lesson.destroy
+		  render json: lesson, status: 204
+		else
+		  render json: lesson
+		end
+		#lesson.destroy
+		#render :nothing => true, :status => :no_content
+
 	end
 
 end
