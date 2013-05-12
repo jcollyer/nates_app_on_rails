@@ -1,6 +1,10 @@
+#lessons{
+  margin:0 auto 40px auto;
+}
 .lessons_list {
-  padding:3px;
+  height:160px;
   margin:0 0 20px 0;
+  padding:3px;
   position:relative;
   a:hover > .lessons_summary {
     opacity:1;

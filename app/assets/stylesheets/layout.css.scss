@@ -1,9 +1,9 @@
 $font-body: 'junction', sans-serif;
 $font-heading: 'raleway', sans-serif;
 $font-style: 'Satisfy', cursive;
-
+$color-blue:#0ca7d3;
 body{
-  background:#0ca7d3;
+  background:$color-blue;
   color:#333;
   font-family:$font-body;
   font-size: 110%;
@@ -62,8 +62,22 @@ a{
   margin:0 0 30px 0;
 }
 
+.button {
+  border: 1px solid #eee;
+  color:#eee;
+  padding:15px;
+  &:hover{
+    background:#eee;
+    color:$color-blue;
+  }
+}
 
 .container {
+  padding:20px 0 0 0;
+  h1{
+    margin:20px auto;
+    text-align:center;
+  }
 }
 
 .page_header{
@@ -75,6 +89,49 @@ a{
   }
 }
 
+.view_bar{
+  height:60px;
+  width:100%;
+  .vew_bar_right{
+    float:right;
+    margin:10px;
+  }
+}
+
+.create_button{
+
+}
+
+
+.form_box{
+  margin:20px auto;
+  min-height:360px;
+  width:360px;
+  h1{margin:30px auto;}
+  form{
+    div{
+      float:left;
+      margin:2px;
+      label{
+        color:#eeeeee;
+        float:left;
+        min-width:100px;
+        padding:10px 5px 0 0;
+        text-align:right;
+      }
+      input[type="text"]{
+        border:none;
+        float:left;
+        height:40px;
+        min-width:200px;
+        ::-webkit-input-placeholder{
+          color:#444;
+          font-size:140%;
+        }
+      }
+    }
+  }
+}
 .home_lessons_link{
   border:1px solid #eee;
   color:#eee;

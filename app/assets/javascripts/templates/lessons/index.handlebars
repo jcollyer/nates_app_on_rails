@@ -1,7 +1,12 @@
-<div class="row">
+<h1>Nate's Lesson Catalog</h1>
+<div class="row" id="lessons">
   {{#each model}}
     {{partial "lessons/list"}}
   {{/each}}
 
-  {{#linkTo "lessons.new"}}Create New Lesson{{/linkTo}}
+</div>
+<div class="view_bar">
+	<div class="vew_bar_right">
+		{{#linkTo "lessons.new" class="button create_button" }}+ New Lesson{{/linkTo}}
+	</div>
 </div>
