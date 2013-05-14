@@ -10,8 +10,9 @@
       {{view Ember.TextField valueBinding='summary' name='summary' viewName='summaryField'}}
     </div>
     <div>
-      <label {{bindAttr for='imageUrlField.elementId'}}>image</label>
-      {{view Ember.TextField valueBinding='imageUrl' name='imageUrl' viewName='imageUrlField'}}
+      <label>Image</label>
+      {{view App.file fileBinding="lesson.imageUrl" }}
+
     </div>
   </form>
 </div>
