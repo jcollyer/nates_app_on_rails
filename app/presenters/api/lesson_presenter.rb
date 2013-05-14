@@ -17,6 +17,7 @@ class Api::LessonPresenter
 			:id => lesson.id,
 			:title => lesson.title,
 			:summary => lesson.summary
+		#	:image_url => lesson.image_url
 		}
 	end
 end
