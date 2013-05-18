@@ -10,5 +10,7 @@ App::Application.routes.draw do
     resources :lessons, :except => [:new, :edit]
   end
 
+  resources :lessons, :only => [:new, :edit]
+
   root to: 'application#index'
 end
