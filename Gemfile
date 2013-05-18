@@ -5,6 +5,7 @@ gem "jquery-rails"
 gem "ember-rails"
 gem "momentjs-rails"
 gem "sqlite3"
+gem "paperclip"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
