@@ -16,8 +16,10 @@ class Api::LessonPresenter
 		{
 			:id => lesson.id,
 			:title => lesson.title,
-			:summary => lesson.summary
-		#	:image_url => lesson.image_url
+			:summary => lesson.summary,
+			:image_thumb_url => lesson.image.url(:thumb),
+			:image_medium_url => lesson.image.url(:medium),
+			:image_large_url => lesson.image.url(:large)
 		}
 	end
 end

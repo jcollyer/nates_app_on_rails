@@ -37,3 +37,14 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+# Public: Uploaded file for testing attachments.
+#
+# filename  - Attachment filename.
+# mime_type - Attachment mime type.
+#
+# Returns a Rack::Test::UploadedFile.
+def uploaded_file(filename, mime_type)
+  path = Rails.root.join("spec", "fixtures", filename)
+  Rack::Test::UploadedFile.new(path, mime_type)
+end

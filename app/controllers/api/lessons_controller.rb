@@ -14,7 +14,7 @@ class Api::LessonsController < ApplicationController
 		lesson = Lesson.create! do |instance|
 			instance.title = params[:lesson][:title]
 			instance.summary = params[:lesson][:summary]
-		#	instance.image_url = params[:lesson][:image_url]
+			instance.image = params[:lesson][:image]
 		end
 		render :json => Api::LessonPresenter.new(lesson), :status => :created
 	end
@@ -23,7 +23,7 @@ class Api::LessonsController < ApplicationController
 		lesson = Lesson.find(params[:id])
 		lesson.title = params[:lesson][:title]
 		lesson.summary = params[:lesson][:summary]
-	# lesson.image_url = params[:lesson][:image_url]
+	  lesson.image = params[:lesson][:image] if params[:lesson][:image].present?
 		lesson.save!
 		render :json => Api::LessonPresenter.new(lesson), :status => :accepted
 	end
