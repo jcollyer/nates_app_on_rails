@@ -82,7 +82,7 @@ describe Api::LessonsController do
 
 		it "responds accepted" do
 			destroy_lesson
-			expect(response.status).to eq(202)
+			expect(response.status).to eq(204)
 		end
 
 		it "destroys lesson" do
