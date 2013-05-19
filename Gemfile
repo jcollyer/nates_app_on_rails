@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 gem "rails", "3.2.13"
+gem "mysql2"
 gem "jquery-rails"
 gem "ember-rails"
 gem "momentjs-rails"
-gem "sqlite3"
 gem "paperclip"
 
 group :assets do
