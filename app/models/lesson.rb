@@ -4,6 +4,10 @@ class Lesson < ActiveRecord::Base
 		:styles => { :large => "400x400>", :medium => "240x240>", :thumb => "100x100>" },
 		:default_url => "/assets/missing_:style.png"
 
+  has_attached_file :mp3
+
+
+
   # Public: Title of the lesson.
   # column :title
 

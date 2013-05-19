@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130518172330) do
+ActiveRecord::Schema.define(:version => 20130518172340) do
 
   create_table "lessons", :force => true do |t|
     t.string   "title"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(:version => 20130518172330) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "mp3_file_name"
+    t.string   "mp3_content_type"
+    t.integer  "mp3_file_size"
+    t.datetime "mp3_updated_at"
   end
 
 end
