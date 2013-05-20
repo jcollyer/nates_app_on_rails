@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "rails", "3.2.13"
-gem "mysql2"
+gem "rails", "3.2.6"
+gem "pg"
 gem "jquery-rails"
 gem "ember-rails"
 gem "momentjs-rails"
