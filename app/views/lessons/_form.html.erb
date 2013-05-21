@@ -1,9 +1,20 @@
-<%= form.label :title %>
-<%= form.text_field :title %>
-<%= form.label :summary %>
-<%= form.text_field :summary %>
-<%= form.label :image %>
-<%= form.file_field :image %>
-<%= form.label :mp3 %>
-<%= form.file_field :mp3 %>
-<%= form.submit %>
+<div>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div>
+  <%= form.label :summary %>
+  <%= form.text_field :summary %>
+</div>
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+<div>
+  <%= form.label :mp3 %>
+  <%= form.file_field :mp3 %>
+</div>
+<div>
+  <label>&nbsp;</label>
+  <%= form.submit  :class => "button" %>
+</div>

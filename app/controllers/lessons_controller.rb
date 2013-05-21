@@ -9,5 +9,7 @@ class LessonsController < ApplicationController
 		@lesson = Lesson.find(params[:id])
 
 		render :layout => nil
+     #redirect_to :back
+
 	end
 end

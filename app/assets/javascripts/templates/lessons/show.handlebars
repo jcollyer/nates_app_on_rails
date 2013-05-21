@@ -9,10 +9,13 @@
     <h2>{{title}}</h2>
     <p>{{summary}}</p>
     <p>{{date}}</p>
+    <p class="hidden_div" id="edit_button_id">{{id}}</p>
   </div>
 </div>
 <div class="view_bar">
   <div class="vew_bar_right">
-    {{#linkTo "lessons.edit" content class="button"}}Edit{{/linkTo}}
+    {{#view App.EditLesson}}
+      <span class="button">Edit</span>
+    {{/view}}
   </div>
 </div>
