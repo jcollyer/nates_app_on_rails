@@ -4,8 +4,6 @@ $font-style: 'Satisfy', cursive;
 $color-blue:#0ca7d3;
 body{
   background:$color-blue;
-  color:#333;
-  font-family:$font-body;
   font-size: 110%;
 }
 
@@ -15,6 +13,12 @@ body{
   .columns{
     padding:5px;
   }
+}
+
+p{
+  color:#eee;
+  font-family:$font-heading;
+  line-height: 1.5em;
 }
 
 h1{

@@ -103,13 +103,14 @@
             #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .volume-meter .volume-bar:hover {
               cursor: ew-resize; }
         #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .lesson_mod_volume_max {
-          background: url(/images/icon_volume_max.png) no-repeat;
+          background: url('icon_volume_max.png') no-repeat;
           float: left;
           width: 40px; }
         #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-mute {
-          background: url(/images/icon_volume_play.png) no-repeat; }
+           background:url('icon_volume_play.png') no-repeat;
+        }
         #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .jp-unmute {
-          background: url(/images/icon_volume_mute.png) no-repeat; }
+          background: url('icon_volume_mute.png') no-repeat; }
         #lesson_mod #lesson_mod_menu .lesson_mod_controls .lesson_mod_volume .icon-volume {
           display: inline-block;
           width: 26px;
