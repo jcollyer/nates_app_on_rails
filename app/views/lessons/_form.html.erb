@@ -8,13 +8,14 @@
 </div>
 <div>
   <%= form.label :image %>
-  <%= form.file_field :image %>
+  <%= form.file_field :image, :style => "margin-top:10px; line-height:2em; width:300px;" %>
 </div>
 <div>
   <%= form.label :mp3 %>
-  <%= form.file_field :mp3 %>
+  <%= form.file_field :mp3, :style => "margin-top:10px; line-height:2em; width:300px;" %>
 </div>
 <div>
-  <label>&nbsp;</label>
+  <label></label>
   <%= form.submit  :class => "button" %>
+  <a href="/#/lessons" class="button">&larr; Lessons</a>
 </div>
