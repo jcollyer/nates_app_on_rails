@@ -17,7 +17,8 @@ class Api::LessonsController < ApplicationController
 			instance.image = params[:lesson][:image]
 			instance.mp3 = params[:lesson][:mp3]
 		end
-		render :json => Api::LessonPresenter.new(lesson), :status => :created
+		# render :json => Api::LessonPresenter.new(lesson), :status => :created
+		redirect_to "/#/lessons"
 	end
 
 	def update
@@ -27,7 +28,7 @@ class Api::LessonsController < ApplicationController
 	  lesson.image = params[:lesson][:image] if params[:lesson][:image].present?
 	  lesson.mp3 = params[:lesson][:mp3] if params[:lesson][:mp3].present?
 		lesson.save!
-		#render :json => Api::LessonPresenter.new(lesson), :status => :accepted
+		# render :json => Api::LessonPresenter.new(lesson), :status => :accepted
 		redirect_to "/#/lessons"
 	end
 
