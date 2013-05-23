@@ -1,3 +1,13 @@
-<h1>this is the posts page</h1>
+<h1>Nate's Blog</h1>
+<div class="row" id="posts">
+  {{#each model}}
+    {{partial "posts/list"}}
+  {{/each}}
 
-
+</div>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{! {{#linkTo "posts.new" class="button create_button" }}    {{!  + New post{{/linkTo}}
+    <a href="posts/new" class="button">+ New post</a>
+  </div>
+</div>
