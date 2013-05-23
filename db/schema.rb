@@ -28,4 +28,12 @@ ActiveRecord::Schema.define(:version => 20130518172340) do
     t.datetime "mp3_updated_at"
   end
 
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.text     "context"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
 end

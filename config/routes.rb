@@ -8,9 +8,11 @@ App::Application.routes.draw do
 
   namespace :api do
     resources :lessons, :except => [:new, :edit]
+    resources :posts, :except => [:new, :edit]
   end
 
   resources :lessons, :only => [:new, :edit]
+  resources :posts, :except => [:new, :edit]
 
   root to: 'application#index'
 end
