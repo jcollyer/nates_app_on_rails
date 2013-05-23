@@ -2,11 +2,11 @@
 <div id="nav_container">
   <ul id="nav_main">
     <li class="left_link"><a href="http://www.calvary.com">Calvary.com</a></li>
-    <li><a href="#">blog</a></li>
-    <li><a href="#">video</a></li>
-    <li><a href="#">reading</a></li>
+    <li>{{#linkTo "posts.index"}}blog{{/linkTo}}</li>
+    <li>{{#linkTo "videos.index"}}video{{/linkTo}}</li>
+    <li>{{#linkTo "books.index"}}reading{{/linkTo}}</li>
     <li>{{#linkTo "about"}}about{{/linkTo}}</li>
-    <li><div class="slink"></div>{{#linkTo "lessons.index"}}teaching{{/linkTo}}</li>
+    <li>{{#linkTo "lessons.index"}}teaching{{/linkTo}}</li>
     <li>{{#linkTo "home"}}home{{/linkTo}}</li>
   </ul>
 </div>
@@ -39,9 +39,9 @@
         <div class="footer_link small-6 large-2 columns">{{#linkTo "home"}}home{{/linkTo}}</div>
         <div class="footer_link small-6 large-2 columns">{{#linkTo "lessons.index"}}teaching{{/linkTo}}</div>
         <div class="footer_link small-6 large-2 columns">{{#linkTo "about"}}about{{/linkTo}}</div>
-        <div class="footer_link small-6 large-2 columns">{{#linkTo "home"}}reading{{/linkTo}}</div>
-        <div class="footer_link small-6 large-2 columns">{{#linkTo "home"}}video{{/linkTo}}</div>
-        <div class="footer_link small-6 large-2 columns">{{#linkTo "home"}}blog{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "books.index"}}reading{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "videos.index"}}video{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "posts.index"}}blog{{/linkTo}}</div>
       </div>
     </div>
   </div>
