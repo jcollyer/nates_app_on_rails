@@ -6,6 +6,7 @@ gem "pg"
 gem "jquery-rails"
 gem "ember-rails"
 gem "momentjs-rails"
+gem "showdown-rails"
 gem "paperclip"
 gem "aws-sdk"
 
