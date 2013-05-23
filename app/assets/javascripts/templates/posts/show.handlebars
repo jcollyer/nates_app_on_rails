@@ -11,8 +11,6 @@
 </div>
 <div class="view_bar">
   <div class="vew_bar_right">
-    {{#view App.EditPost}}
-      <span class="button">Edit</span>
-    {{/view}}
+    {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
   </div>
 </div>

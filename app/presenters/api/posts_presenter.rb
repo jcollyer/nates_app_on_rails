@@ -6,7 +6,7 @@ class Api::PostsPresenter
     @posts = posts
   end
 
-  def as_json(options ={})
+  def as_json(options = {})
     {
       :posts => posts_array
     }
@@ -14,7 +14,7 @@ class Api::PostsPresenter
 
   def posts_array
     posts.map do |post|
-      Api::LessonPresenter.new(post).post_hash
+      Api::PostPresenter.new(post).post_hash
     end
   end
 end

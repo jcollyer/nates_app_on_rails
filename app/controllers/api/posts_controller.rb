@@ -1,4 +1,4 @@
-class Api::PostController < ApplicationController
+class Api::PostsController < ApplicationController
 
   def index
     posts = Post.all
@@ -14,6 +14,7 @@ class Api::PostController < ApplicationController
     post = Post.create! do |instance|
       instance.title = params[:post][:title]
       instance.summary = params[:post][:summary]
+      instance.context = params[:post][:context]
     end
     render :json => Api::PostPresenter.new(post), :status => :created
   end
@@ -22,6 +23,7 @@ class Api::PostController < ApplicationController
     post = Post.find(params[:id])
     post.title = params[:post][:title]
     post.summary = params[:post][:summary]
+    post.context = params[:post][:context]
     post.save!
     render :json => Api::PostPresenter.new(post), :status => :accepted
   end

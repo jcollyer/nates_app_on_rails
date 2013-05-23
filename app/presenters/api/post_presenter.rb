@@ -16,7 +16,7 @@ class Api::PostPresenter
     {
       :id => post.id,
       :title => post.title,
-      :summary => post.summar,
+      :summary => post.summary,
       :context => post.context
     }
   end

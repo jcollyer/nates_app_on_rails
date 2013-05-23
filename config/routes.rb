@@ -12,7 +12,7 @@ App::Application.routes.draw do
   end
 
   resources :lessons, :only => [:new, :edit]
-  resources :posts, :except => [:new, :edit]
+  resources :posts, :only => [:new, :edit]
 
   root to: 'application#index'
 end
