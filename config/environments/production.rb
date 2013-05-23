@@ -68,7 +68,7 @@ App::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => ENV['nateslessons'],
+      :bucket => ENV['natesapp'],
       :access_key_id => ENV['AKIAJYO6ALTV3O5SMVXA'],
       :secret_access_key => ENV['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']
     }
