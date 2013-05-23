@@ -8,11 +8,16 @@ class Api::PostPresenter
 
   def as_json(options = {})
     {
-      :post => {
-        :title => post.title,
-        :summary => post.summary,
-        :context => post.context
-      }
+      :post => post_hash
+    }
+  end
+
+  def post_hash
+    {
+      :id => post.id,
+      :title => post.title,
+      :summary => post.summar,
+      :context => post.context
     }
   end
 end

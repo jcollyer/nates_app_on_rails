@@ -14,11 +14,7 @@ class Api::PostsPresenter
 
   def posts_array
     posts.map do |post|
-      {
-        :title => post.title,
-        :summary => post.summary,
-        :context => post.context
-      }
+      Api::LessonPresenter.new(post).post_hash
     end
   end
 end
