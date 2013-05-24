@@ -19,6 +19,7 @@ p{
   color:#eee;
   font-family:$font-heading;
   line-height: 1.5em;
+  padding:3px 0px;
 }
 
 h1{
@@ -80,9 +81,11 @@ a{
   display: inline-block;
 }
 
+a.button,
 .button {
   border: 1px solid #eee;
   color:#eee;
+  font-size: 70%;
   padding:15px;
   &:hover{
     background:#eee;
@@ -90,6 +93,48 @@ a{
   }
 }
 
+.float_right{
+  float:right;
+}
+
+.image{
+  margin:2px;
+  padding:2px;
+  position:relative;
+  z-index: 9;
+}
+
+.skew{
+  position:relative;
+  &:before{
+    border-left: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-radius: 16px;
+    content:"";
+    height: 342px;
+    bottom:0px;
+    position:absolute;
+    width:100%;
+    transform: skew(-5deg,-5deg);
+    -ms-transform: skew(-5deg,-5deg);
+    -webkit-transform: skew(-5deg,-5deg);
+  }
+  &:after{
+    border-bottom: 5px solid #fff;
+    border-right:  5px solid #fff;
+    border-radius: 16px;
+    content:"";
+    height: 342px;
+    left:2px;
+    bottom:0px;
+    position:absolute;
+    width:100%;
+    transform: skew(-5deg,-5deg);
+    -ms-transform: skew(-5deg,-5deg);
+    -webkit-transform: skew(-5deg,-5deg);
+    z-index:99;
+  }
+}
 .container {
   padding:20px 0 0 0;
   h1{
@@ -100,7 +145,7 @@ a{
 
 .page_header{
   .page_header_info_one{
-    padding:85px 0 0 0;
+    padding:85px 0 0 10%;
   }
   .page_header_info_two{
 

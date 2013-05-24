@@ -26,7 +26,11 @@ App.Router.map ->
     @route "show",
       path: "/:lesson_id"
 
-App.HomeRoute = Ember.Route.extend
+App.HomeRoute = Em.Route.extend
+  model: ->
+    App.Lesson.find()
+
+App.ApplicationRoute = Em.Route.extend
   model: ->
     App.Lesson.find()
 
