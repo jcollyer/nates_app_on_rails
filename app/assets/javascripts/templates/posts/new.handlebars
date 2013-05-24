@@ -1,3 +1,9 @@
+<div class="view_bar">
+  <div class="vew_bar_right">
+    <a href='#' {{action cancel}} class='button'>Cancel</a>
+    <a href='#' {{action save}} class='button'>Create</a>
+  </div>
+</div>
 <div class="form_box">
   <h1>Create New Post</h1>
   <form>
@@ -11,16 +17,8 @@
     </div>
     <div>
       <label {{bindAttr for='contextField.elementId'}}>Context</label>
-      {{view Ember.TextField valueBinding='context' name='context' viewName='contextField'}}
+      {{view Ember.TextArea valueBinding='context' name='context' viewName='contextField' id='context_textfield' rows="15"}}
     </div>
   </form>
 </div>
 
-<div class="view_bar">
-  <div class="vew_bar_right">
-    <a href='#' {{action cancel}} class='button'>Cancel</a>
-  </div>
-  <div class="vew_bar_right">
-    <a href='#' {{action save}} class='button'>Create</a>
-  </div>
-</div>

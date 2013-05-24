@@ -1,11 +1,14 @@
-<div class="posts_list large-3 small-6 columns">
-  {{#linkTo "posts.show" this}}
-    <img {{bindAttr src="imageMediumUrl"}}>
-    <h2 class="posts_summary">
-      {{summary}}
-    </h2>
-    <h2>{{title}}</h2>
-    <h3>{{date}}</h3>
-  {{/linkTo}}
-   <a href='#' {{action 'destroy'}} class="button">Delete</a>
+<div class="row" id="posts">
+  <div class="posts_list small-12 columns">
+    {{#linkTo "posts.show" this}}
+      <img {{bindAttr src="imageMediumUrl"}}>
+      <h2>{{title}}</h2>
+      <h2 class="posts_summary">
+        {{summary}}
+      </h2>
+    {{/linkTo}}
+      <p>{{date}}<p>
+      <p>{{context}}</p>
+
+  </div>
 </div>

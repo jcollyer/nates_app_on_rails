@@ -1,16 +1,14 @@
 <div class="row">
-  <div class="post_container large-6 small-12 columns">
-  </div>
-  <div class="post_info large-6 small-12 columns">
-    <h2>{{title}}</h2>
-    <p>{{summary}}</p>
-    <p>{{context}}</p>
-    <p>{{date}}</p>
-    <p class="hidden_div" id="edit_button_id">{{id}}</p>
+  <div class="post_info small-12 columns">
+    <h1>{{title}}</h1>
+    <p class="text_date">{{date}}</p>
+    <h2>{{summary}}</h2>
+    <p class="text_context">{{context}}</p>
   </div>
 </div>
 <div class="view_bar">
   <div class="vew_bar_right">
     {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+    {{#linkTo "posts" class="button"}}Back{{/linkTo}}
   </div>
 </div>
