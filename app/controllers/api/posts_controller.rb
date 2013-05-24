@@ -15,6 +15,7 @@ class Api::PostsController < ApplicationController
       instance.title = params[:post][:title]
       instance.summary = params[:post][:summary]
       instance.context = params[:post][:context]
+      instance.image = params[:post][:image]
     end
     render :json => Api::PostPresenter.new(post), :status => :created
   end
@@ -24,6 +25,7 @@ class Api::PostsController < ApplicationController
     post.title = params[:post][:title]
     post.summary = params[:post][:summary]
     post.context = params[:post][:context]
+    post.image = params[:post][:image] if params[:post][:image].present?
     post.save!
     render :json => Api::PostPresenter.new(post), :status => :accepted
   end
