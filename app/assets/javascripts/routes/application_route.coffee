@@ -21,12 +21,17 @@ App.Router.map ->
       path: "/:book_id"
   @resource "lessons", ->
     @route "new"
+    @route "_snip"
     @route "edit",
       path: "/:lesson_id/edit"
     @route "show",
       path: "/:lesson_id"
 
 App.HomeRoute = Em.Route.extend
+  model: ->
+    App.Lesson.find()
+
+App.PlayerRoute = Em.Route.extend
   model: ->
     App.Lesson.find()
 
