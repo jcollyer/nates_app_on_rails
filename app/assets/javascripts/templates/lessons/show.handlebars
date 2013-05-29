@@ -1,8 +1,13 @@
 <div class="row">
   <div class="lesson_container large-6 small-12 columns">
     <div class="lesson_wrapper">
-      <img class="lesson_image" id="art" {{bindAttr src="imageLargeUrl"}}>
-      <div class="play_mark_large play_button paused">{{mp3}}</div>
+      <img class="lesson_image play_this_lesson_image" {{bindAttr src="imageLargeUrl"}}>
+      <div class="play_mark_large play_button paused">
+        <div class="play_this_lesson_mp3">{{mp3}}</div>
+        <div class="play_this_lesson_title" style="display:none">{{title}}</div>
+        <div class="play_this_lesson_summary" style="display:none">{{summary}}</div>
+        <div class="play_this_lesson_date" style="display:none">{{date}}</div>
+      </div>
     </div>
   </div>
   <div class="lesson_info large-6 small-12 columns">

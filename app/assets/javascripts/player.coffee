@@ -1,15 +1,21 @@
 $ ->
   $(document).on "click", ".play_button",  ->
     audioPlayer = $("#lesson_mod_menu")
-    audioPlayer.css display: "block"
+    $(".footer").css "margin-bottom", "100px"
+    audioPlayer.fadeIn()
     $button = $(this)
-    mediaPath =  $button.text()
     thisParent = $button.parent()
-    titlePath = thisParent.find(".play_this_lesson_title").text()
-    summaryPath = thisParent.find(".play_this_lesson_summary").text()
-    datePath = thisParent.find(".play_this_lesson_date").text()
+    mediaPath =  $button.find(".play_this_lesson_mp3").text()
+    titlePath = $button.find(".play_this_lesson_title").text()
+    summaryPath = $button.find(".play_this_lesson_summary").text()
+    datePath = $button.find(".play_this_lesson_date").text()
+    imagePath = thisParent.find(".play_this_lesson_image").attr('src')
+    console.log(titlePath)
+    console.log(summaryPath)
+    console.log(imagePath)
     $(".lesson_mod_info").empty()
     $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2> <h2> "+datePath+" </h2>")
+    $(".mod_img").attr("src", imagePath)
     window.player = $("#jquery_jplayer_1").jPlayer
       swfPath: "http://jplayer.org/latest/js"
       supplied: "mp3, oga"
