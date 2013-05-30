@@ -87,7 +87,7 @@
   top:40px;
   width:50px;
   z-index:9;
-
+  &:hover{cursor:pointer;}
   &:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
