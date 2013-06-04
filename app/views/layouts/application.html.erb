@@ -4,28 +4,32 @@
   <title>App</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-
   <%= csrf_meta_tags %>
+
+  <% if current_user.present? %>
+    <meta name="current-user" content="loggedin" />
+  <% end %>
 </head>
 <body>
-
-
-  <div id="user_nav">
-    <% if current_user %>
-      Logged in as <%= current_user.email %>.
-      <%= link_to "Log out", log_out_path %>
-    <% else %>
-      <%= link_to "Sign up", sign_up_path %> or
-      <%= link_to "log in", log_in_path %>
-    <% end %>
-  </div>
 
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, :id => "flash_#{name}" %>
   <% end %>
 
+  <div id="user_nav">
+    <% if current_user %>
+      <div class="loggedin clearfix">
+        <p>Logged in as: &nbsp; <span class="hh1"><%= current_user.email %></span></p>
+        <%= link_to "Log out", log_out_path, :class => "button", :style => "float:right;" %>
+      </div>
+    <% else %>
+      <%# link_to "Sign up", sign_up_path %>
+      <%# link_to "log in", log_in_path %>
+    <% end %>
+  </div>
 
 <%= yield %>
+
 
 </body>
 </html>

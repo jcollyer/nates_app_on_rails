@@ -1,7 +1,9 @@
 <h1>Nate's Blog</h1>
 <div class="view_bar">
   <div class="vew_bar_right">
-    {{#linkTo "posts.new" class="button create_button" }}+ New post{{/linkTo}}
+    {{#if currentUser.isSignedIn}}
+      {{#linkTo "posts.new" class="button create_button" }}+ New post{{/linkTo}}
+    {{/if}}
   </div>
 </div>
 {{#each model}}

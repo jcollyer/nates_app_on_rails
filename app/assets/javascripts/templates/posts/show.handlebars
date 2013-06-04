@@ -9,7 +9,9 @@
 </div>
 <div class="view_bar">
   <div class="vew_bar_right">
-    {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+    {{#if currentUser.isSignedIn}}
+      {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+    {{/if}}
     {{#linkTo "posts" class="button"}}Back{{/linkTo}}
   </div>
 </div>

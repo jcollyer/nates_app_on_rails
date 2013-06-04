@@ -17,6 +17,7 @@
     <p class="hidden_div" id="edit_button_id">{{id}}</p>
   </div>
 </div>
+{{#if currentUser.isSignedIn}}
 <div class="view_bar">
   <div class="vew_bar_right">
     {{#view App.EditLesson}}
@@ -24,3 +25,4 @@
     {{/view}}
   </div>
 </div>
+{{/if}}
