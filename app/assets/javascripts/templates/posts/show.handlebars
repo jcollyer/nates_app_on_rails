@@ -11,6 +11,7 @@
   <div class="vew_bar_right">
     {{#if currentUser.isSignedIn}}
       {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+      <a href='#' {{action 'destroy'}} class="button">Delete</a>
     {{/if}}
     {{#linkTo "posts" class="button"}}Back{{/linkTo}}
   </div>

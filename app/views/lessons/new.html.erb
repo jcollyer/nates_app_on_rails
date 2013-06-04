@@ -114,6 +114,11 @@ a {
 
       <%= form_for @lesson, :url => api_lessons_path do |form| %>
         <%= render "form", :form => form %>
+        <div>
+          <label></label>
+          <%= form.submit  :class => "button" %>
+          <a href="/#/lessons" class="button">&larr; Lessons</a>
+        </div>
       <% end %>
 
   </div>

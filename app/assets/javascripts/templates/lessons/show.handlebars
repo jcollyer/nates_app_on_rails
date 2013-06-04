@@ -14,7 +14,6 @@
     <h2>{{title}}</h2>
     <p>{{summary}}</p>
     <p>{{date}}</p>
-    <p class="hidden_div" id="edit_button_id">{{id}}</p>
   </div>
 </div>
 {{#if currentUser.isSignedIn}}
@@ -23,6 +22,9 @@
     {{#view App.EditLesson}}
       <span class="button">Edit</span>
     {{/view}}
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action 'destroy'}} class="button">Delete</a>
   </div>
 </div>
 {{/if}}

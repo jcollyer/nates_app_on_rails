@@ -11,10 +11,10 @@ class LessonsController < ApplicationController
 		render :layout => nil
   end
 
-  # def destroy
-  #   @lesson = Lesson.find(params[:id])
-  #   @lesson.destroy
-  #   render :nothing => true, :status => :no_content
-  # end
+  def destroy
+    @lesson = Lesson.find(params[:id])
+    @lesson.destroy
+    render :nothing => true, :status => :no_content
+  end
 
 end
