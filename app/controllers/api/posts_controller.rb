@@ -17,7 +17,8 @@ class Api::PostsController < ApplicationController
       instance.context = params[:post][:context]
       instance.image = params[:post][:image]
     end
-    render :json => Api::PostPresenter.new(post), :status => :created
+    # render :json => Api::PostPresenter.new(post), :status => :created
+    redirect_to "/#/posts"
   end
 
   def update
@@ -27,7 +28,8 @@ class Api::PostsController < ApplicationController
     post.context = params[:post][:context]
     post.image = params[:post][:image] if params[:post][:image].present?
     post.save!
-    render :json => Api::PostPresenter.new(post), :status => :accepted
+    # render :json => Api::PostPresenter.new(post), :status => :accepted
+    redirect_to "/#/posts"
   end
 
   def destroy

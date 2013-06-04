@@ -20,8 +20,9 @@
       {{view Ember.TextArea valueBinding='context' name='context' viewName='contextField' id='context_textfield' rows="15"}}
     </div>
     <div>
-       <label>Image</label>
-      {{view App.file fileBinding="post.image"}}
+      <label>Image</label>
+      <input id="post_image" name="post[image]"  type="file">
+     {{!  {{view App.file fileBinding="post.image_url" }}
     </div>
   </form>
 </div>

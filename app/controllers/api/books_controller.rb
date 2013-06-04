@@ -16,6 +16,7 @@ class Api::BooksController < ApplicationController
       instance.summary = params[:book][:summary]
     end
     render :json => Api::BookPresenter.new(book), :status => :created
+
   end
 
   def update
