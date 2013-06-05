@@ -5,3 +5,11 @@ App.EditLesson = Ember.View.extend({
     //alert(URL);
   }
 });
+
+App.EditPost = Ember.View.extend({
+  click: function() {
+    var theID = $('#edit_button_id').text();
+    window.location = "/posts/"+theID+"/edit"
+    //alert(URL);
+  }
+});

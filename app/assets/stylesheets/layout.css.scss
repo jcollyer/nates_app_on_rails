@@ -83,6 +83,9 @@ a.button,
   }
 }
 
+.float_left{
+  float:left;
+}
 .float_right{
   float:right;
 }
@@ -126,19 +129,10 @@ a.button,
   }
 }
 .container {
-  padding:20px 0 0 0;
+  padding:20px 0 20px 0;
   h1{
     margin:20px auto;
     text-align:center;
-  }
-}
-
-.page_header{
-  .page_header_info_one{
-    padding:85px 0 0 10%;
-  }
-  .page_header_info_two{
-
   }
 }
 
@@ -243,9 +237,7 @@ a.button,
     color:#222;
   }
 }
-.home_page_lessons{
 
-}
 
 .the_top_nav{
   min-width: 100%;
@@ -283,6 +275,40 @@ a.button,
       }
     }
   }
+}
+
+.home{
+  .home_left{
+    padding:40px;
+  }
+  .home_right{
+    padding:30px;
+  }
+}
+
+.show_container{
+  .show_box{
+    padding:40px;
+    h1{
+      text-align: left;
+    }
+  }
+}
+
+#edit_button_id{
+  display:none;
+}
+.post_header{
+  h1{padding:40px 0 0 0;}
+  h2{text-align: center;}
+  p{text-align:center; color:#444;}
+}
+.posts{
+  background:#0a96bd;
+  line-height: 3em;
+  margin:0 0 80px 0;
+  min-width: 100%;
+  padding:20px;
 }
 
 .section {
@@ -361,6 +387,7 @@ a.button,
 }
 
 .footer{
+  bottom:0px;
   margin:0;
   width:100%;
   padding:0px 0 0 0;
@@ -389,7 +416,7 @@ a.button,
           }
         }
         .footer_link{
-          border-left:1px solid #ccc;
+          border-left:1px solid #888;
           padding:0px;
         }
         .footer_link:first-child{border:none;}
@@ -400,7 +427,19 @@ a.button,
           .footer_social_twitter{background:#4099FF;}
           .footer_social_google{background:#d34836;}
           .footer_social_box{
-            padding:60px 18px;
+            height:60px;
+            line-height: 2em;
+            padding:0px;
+            a{
+              display:block;
+              height:100%;
+              width:100%;
+              &:hover{
+                opacity:0.8;
+                background:none;
+                color:#444;
+              }
+            }
           }
         }
       }
@@ -409,7 +448,9 @@ a.button,
 }
 
 
-@media screen and (max-width: 700px) {
+
+/** Media Queries  **/
+@media screen and (max-width: 770px) {
   .lesson_mod{
     height:auto;
     .lesson_mod_menu{
@@ -427,6 +468,13 @@ a.button,
   }
   .section{
     width:97%;
+  }
+
+  .hh1, .hh2, .hh3{
+    text-align: center;
+  }
+  .home_lessons_link{
+    padding:4% 43%;
   }
 }
 

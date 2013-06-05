@@ -1,11 +1,35 @@
-<h1>Nate's Books</h1>
+<h1>nate's <span class="hh1">Books</span></h1>
+{{#if currentUser.isSignedIn}}
 <div class="view_bar">
   <div class="vew_bar_right">
-    {{#linkTo "books.new" class="button create_button" }}+ New book{{/linkTo}}
+      {{#linkTo "books.new" class="button create_button" }}+ New book{{/linkTo}}
   </div>
 </div>
+{{/if}}
 {{#each model}}
   {{partial "books/list"}}
 {{/each}}
+
+<div class="row">
+  <div class="small-12 large-4 columns">
+    <br><br>
+    <img src="/assets/nate-book-1.jpg" />
+    <br><br><br>
+    <a href="http://www.amazon.com/The-No-Nonsense-Biblical-Nate-Holdridge/dp/1484053508" target="_blank" class="button" style="margin:0px 0 0 100px">amazon</a>
+  </div>
+  <div class="small-12 large-8 columns">
+    <h1 style="text-align:left; margin:30px 0 0 0px;">The No-Nonsense Biblical Man</h1>
+    <p style="margin:0px;">by &nbsp; <span class="hh2">Nate Holdridge</span></p>
+    <p>
+      Men are important. Men matter. God loves to use men. A quick survey of our Bibles and study of our world will lead us to a simple conclusion: men are capable of great good and great evil. In the hands of God, men can be wonderfully used to bless the world around them.
+    </p>
+    <p>
+      The No-Nonsense Biblical Man takes a direct look at living and being a man of God, a man who impacts his world for good, by asking some straightforward questions: Has your heart been won by the cross of Christ? Has God become your Father? Have you discovered the mission God has for you? Have you allowed yourself to become set apart for His purposes? How can you best use your body, money, and time for God’s honor? How can you become more beneficial to the key people in your life? How are you to interact with the world around you? God has given us His word.
+    </p>
+    <p>
+       He longs to help us become good men. He wants to speak to us and instruct us. His will is best. The No-Nonsense Biblical Man takes a look into the Bible in order to discover God’s heart for His men. Let’s discover Him as He meets us in His word.
+    </p>
+  </div>
+</div>
 
 

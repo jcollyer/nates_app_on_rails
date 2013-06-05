@@ -1,18 +1,27 @@
-<div class="row">
-  <div class="post_info small-12 columns">
-    <h1>{{title}}</h1>
+<h1><span class="hh1">{{title}}</span></h1>
+<div class="row show_container">
+  <div class="post_info small-12 large-6 columns show_box">
     <p class="text_date">{{date}}</p>
     <h2>{{summary}}</h2>
-    <img class="post_image" {{bindAttr src="imageLargeUrl"}}>
     <p class="text_context">{{context}}</p>
+  </div>
+  <div class="post_info small-12 large-6 columns show_box">
+    <img class="post_image" {{bindAttr src="imageLargeUrl"}}>
   </div>
 </div>
 <div class="view_bar">
+{{#if currentUser.isSignedIn}}
   <div class="vew_bar_right">
-    {{#if currentUser.isSignedIn}}
-      {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+    {{#view App.EditPost}}
+      <span id="edit_button_id">{{id}}</span>
+      <span class="button">Edit</span>
+    {{/view}}
+  </div>
+  <div class="vew_bar_right">
       <a href='#' {{action 'destroy'}} class="button">Delete</a>
-    {{/if}}
+  </div>
+{{/if}}
+  <div class="vew_bar_right">
     {{#linkTo "posts" class="button"}}Back{{/linkTo}}
   </div>
 </div>

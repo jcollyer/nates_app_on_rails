@@ -1,4 +1,3 @@
-<h1>Nate's Blog</h1>
 <div class="view_bar">
   <div class="vew_bar_right">
     {{#if currentUser.isSignedIn}}
@@ -6,6 +5,7 @@
     {{/if}}
   </div>
 </div>
+<h1>nate's <span class="hh1">Blog</span></h1>
 {{#each model}}
   {{partial "posts/list"}}
 {{/each}}
