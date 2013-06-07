@@ -17,6 +17,7 @@ body{
 }
 .row .row {
   width:100%;
+  margin:0px;
 }
 p{
   color:#eee;
@@ -240,6 +241,7 @@ a.button,
 
 
 .the_top_nav{
+  background:#222;
   min-width: 100%;
   .calvary_link{
       margin:17px 0 0 0px;
