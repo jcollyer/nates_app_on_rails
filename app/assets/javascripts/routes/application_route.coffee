@@ -26,6 +26,12 @@ App.Router.map ->
       path: "/:lesson_id/edit"
     @route "show",
       path: "/:lesson_id"
+  @resource "biblebooks", ->
+    @route "new"
+    @route "edit",
+      path: "/:biblebook_id/edit"
+    @route "show",
+      path: "/:biblebook_id"
 
 App.HomeRoute = Em.Route.extend
   model: ->

@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130531151128) do
+ActiveRecord::Schema.define(:version => 20130531151130) do
+
+  create_table "biblebooks", :force => true do |t|
+    t.string   "name"
+    t.string   "image"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "books", :force => true do |t|
     t.string   "title"

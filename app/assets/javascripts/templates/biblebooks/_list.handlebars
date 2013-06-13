@@ -1,0 +1,14 @@
+<div class="row" id="biblebooks">
+  <div class="books_list small-12 large-6 columns">
+    {{#linkTo "biblebooks.show" this}}
+      <h2>{{name}}</h2>
+    {{/linkTo}}
+  </div>
+  <div class="books_list small-12 large-6 columns">
+    {{#linkTo "biblebooks.show" this}}
+    <span class="border">
+      <img {{bindAttr src="imageMediumUrl"}} class="float_right image" />
+    </span>
+    {{/linkTo}}
+  </div>
+</div>

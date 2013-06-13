@@ -1,0 +1,15 @@
+<h1><span class="hh1">Bible books</span></h1>
+{{#if currentUser.isSignedIn}}
+<div class="view_bar">
+  <div class="vew_bar_right">
+    <a href="biblebooks/new" class="button">+ New Bible book</a>
+  </div>
+</div>
+{{/if}}
+{{#each model}}
+  {{partial "biblebooks/list"}}
+{{/each}}
+
+
+
+

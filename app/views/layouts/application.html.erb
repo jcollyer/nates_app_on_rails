@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>App</title>
+  <meta name = "viewport" content = "initial-scale = 1.0">
+
+  <title>Nate Holdridge</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -21,6 +23,7 @@
       <div class="loggedin clearfix">
         <p>Logged in as: &nbsp; <span class="hh1"><%= current_user.email %></span></p>
         <%= link_to "Log out", log_out_path, :class => "button", :style => "float:right;" %>
+        <a href="/#/biblebooks" class="button" style="float:right;">Bible books</a>
       </div>
     <% else %>
       <%# link_to "Sign up", sign_up_path %>

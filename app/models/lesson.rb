@@ -1,4 +1,5 @@
  class Lesson < ActiveRecord::Base
+
 	# Public: Cover art image for lesson.
 	has_attached_file :image,
 		:styles => { :large => "400x400>", :medium => "240x240>", :thumb => "100x100>" },

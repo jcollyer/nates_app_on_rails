@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="book_info small-12 columns">
+    <h1>{{name}}</h1>
+    <img class="book_image" {{bindAttr src="imageLargeUrl"}}>
+  </div>
+</div>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{#linkTo "biblebooks" class="button"}}Back{{/linkTo}}
+  </div>
+  <div class="vew_bar_right">
+    {{#linkTo "books.edit" content class="button"}}Edit{{/linkTo}}
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action 'destroy'}} class="button">Delete</a>
+  </div>
+</div>
