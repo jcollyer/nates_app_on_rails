@@ -1,10 +1,11 @@
-$font-body: 'junction', sans-serif;
-$font-heading: 'raleway', sans-serif;
+$font-heading: 'junction', sans-serif;
+$font-body: 'raleway', sans-serif;
 $font-style: 'Satisfy', cursive;
 $color-blue:#0ca7d3;
 $color-dark-blue:#025e79;
 body{
   background:$color-blue;
+  font-family:$font-body;
   font-size: 110%;
 }
 
@@ -12,7 +13,7 @@ body{
   width:100%;
   margin:0px auto;
   .columns{
-    padding:5px;
+    padding:0px;
   }
 }
 .row .row {
@@ -21,27 +22,23 @@ body{
 }
 p{
   color:#eee;
-  font-family:$font-heading;
   line-height: 1.5em;
   padding:3px 0px;
 }
 
 h1{
-  font-family:"raleway", Georgia, serif;
   font-weight:400;
   color:white;
   margin:5px;
 }
 
 h2{
-  font-family:$font-heading;
   font-weight:400;
   letter-spacing:-1px;
   margin:5px;
 }
 
 h3{
-  font-family:$font-heading;
   margin:0px;
 }
 
@@ -53,21 +50,18 @@ a{
 
 .hh1{
   color:#eee;
-  font-family:"raleway", Georgia, serif;
   font-size:170%;
   margin:0px;
 }
 
 .hh2{
   color:#eee;
-  font-family:"raleway", Georgia, serif;
   font-size:130%;
   margin:0px;
 }
 
 .hh3{
   color:#eee;
-  font-family:"raleway", Georgia, serif;
   font-size:220%;
   margin:0 0 30px 0;
 }
@@ -167,7 +161,6 @@ a.button,
 }
 
 #user_nav{
-  font-family:$font-heading;
   left:130px;
   top:18px;
   z-index: 99;
@@ -231,7 +224,6 @@ a.button,
 .home_lessons_link{
   border:1px solid #eee;
   color:#eee;
-  font-family:"raleway", Georgia, serif;
   padding:20px 80px;
   &:hover{
     background:#eee;
@@ -254,7 +246,6 @@ a.button,
   .nav_slice{
     background:#222;
     border-top:1px solid #333;
-    font-family:"raleway", Georgia, serif;
     font-size:80%;
     height:47px;
     list-style-type:none;
@@ -321,73 +312,6 @@ a.button,
   width:80%
 }
 
-.page_quote{
-  display:none;
-  font-family: $font-heading;
-  height:180px;
-  left:20px;
-  position:absolute;
-  text-align: center;
-  top:-220px;
-  width:360px;
-  .sun_css{
-    background: #fbf62a;
-    border-radius: 150px;
-    bottom:-54px;
-    height:200px;
-    left:-80px;
-    position: absolute;
-    width:200px;
-    z-index: 8;
-  }
-  .path_css{
-    background:#333;
-    border-radius:100px;
-    bottom:0px;
-    height:70px;
-    position:absolute;
-    right:5px;
-    width:120px;
-    transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -webkit-transform: rotate(150deg);
-    &:before{
-      border-top: 270px solid #333;
-      border-left: 200px solid transparent;
-      content:"";
-      left:-140px;
-      height: 0;
-      position:absolute;
-      top:-200px;
-      width: 0;
-    }
-  }
-  .quote_container{
-    position: absolute;
-    z-index: 9;
-    h1{
-      color:#444;
-      font-size:140%;
-      font-weight: bold;
-      line-height: 1.1em;
-      text-transform: uppercase;
-    }
-    h2{
-      color:#444;
-      font-size:260%;
-      font-style: italic;
-      line-height: 0.9em;
-    }
-    h3{
-      color:#444;
-      font-size: 200%;
-      letter-spacing: 1px;
-      line-height: 1em;
-      text-transform: uppercase;
-    }
-  }
-}
-
 .footer{
   bottom:0px;
   margin:0;
@@ -395,59 +319,77 @@ a.button,
   padding:0px 0 0 0;
   position: relative;
   z-index:98;
-  .footer_content_container{
-    position:relative;
-    z-index:9;
-    .footer_content{
-      margin:0 0 0px 0;
-      .footer_content_header{
-        background: #fff;
-        padding:5px 5px 5px 3%;
-        h1 {color:#ccc;}
+  .footer_links{
+    min-width: 100%;
+  a{
+    border-top:4px solid #999;
+    color:#666;
+    display:block;
+    padding:20px;
+    &:hover{
+      background:#999;
+      color:#fff;
+    }
+  }
+  .footer_link{
+    background:#fff;
+    border-left:1px solid #ddd;
+    padding:0px;
+    text-align: center;
+  }
+  .footer_link:first-child{border:none;}
+}
+}
+
+.footer_social{
+  background: #fff;
+  min-width:100%;
+  height:57px;
+  .footer_social_header{
+    background:#ccc;
+    padding:6px
+  }
+  .footer_social_box{
+    display: block;
+    color:#fff;
+    text-align: center;
+    width:100%;
+  }
+  .footer_social_boxes{
+    padding:0px;
+    .footer_social_facebook{
+      background:#3B5998;
+      border-top:5px solid #35518d;
+      height:28px;
+      padding:4px;
+       &:hover{
+        background:#35518d;
       }
-      .footer_content_body{
-        background:#999;
-        max-width:100%;
-        text-align:center;
-        a{
-          color:#ccc;
-          display:block;
-          padding:10px;
-          &:hover{
-            background:#eee;
-          }
-        }
-        .footer_link{
-          border-left:1px solid #888;
-          padding:0px;
-        }
-        .footer_link:first-child{border:none;}
-        .footer_social{
-          color:white;
-          max-width:100%;
-          .footer_social_facebook{background:#3B5998;}
-          .footer_social_twitter{background:#4099FF;}
-          .footer_social_google{background:#d34836;}
-          .footer_social_box{
-            height:60px;
-            line-height: 2em;
-            padding:0px;
-            a{
-              display:block;
-              height:100%;
-              width:100%;
-              &:hover{
-                opacity:0.8;
-                background:none;
-                color:#444;
-              }
-            }
-          }
-        }
+    }
+    .footer_social_twitter{
+      background:#4099ff;
+      border-top:5px solid #2f76c3;
+      padding:4px;
+      height:29px;
+      &:hover{
+        background:#2f76c3;
       }
     }
   }
+  .footer_calvary_link{
+    background:#222;
+    color:#999;
+    display: block;
+    font-size: 160%;
+    height:57px;
+    padding:16px;
+    text-align: center;
+    &:hover{
+      background:#111;
+    }
+  }
 }
+
 
 
 
@@ -479,28 +421,4 @@ a.button,
     padding:4% 43%;
   }
 }
-
-
-
-.lesson_show_back{
-  background:url(/images/crying_out_to_god.jpg) right top no-repeat;
-  background-size:100%;
-  background-position:0 -100px;
-  -moz-filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height:100%;
-  width:100%;
-  position:absolute;
-  &:after{
-    content:"";
-    background:rgba(255,255,255,0.6);
-    height:100%;
-    left:0px;
-    top:0px;
-    width:100%;
-    position:absolute;
-  }
-}
-
-
 
