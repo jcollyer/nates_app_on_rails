@@ -7,15 +7,19 @@
   <%= form.text_field :summary %>
 </div>
 <div>
+  <%= form.label "amazon URL" %>
+  <%= form.text_field :buylink %>
+</div>
+<div>
   <%= form.label :context %>
-  <%= form.text_field :context %>
+  <%= form.text_area :context, :style => "height:300px;" %>
 </div>
 <div>
   <%= form.label :image %>
   <%= form.file_field :image, :style => "margin-top:10px; line-height:2em; width:300px;" %>
 </div>
 <div>
-  <%= form.label :mp3 %>
-  <%= form.file_field :mp3, :style => "margin-top:10px; line-height:2em; width:300px;" %>
+  <label></label>
+  <%= form.submit  :class => "button" %>
+  <a href="/#/books" class="button">&larr; Books</a>
 </div>
-

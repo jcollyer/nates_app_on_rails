@@ -22,6 +22,10 @@
       {{view Ember.TextField valueBinding='summary' name='summary' viewName='summaryField'}}
     </div>
     <div>
+      <label {{bindAttr for='buylinkField.elementId'}}>buylink</label>
+      {{view Ember.TextField valueBinding='buylink' name='buylink' viewName='buylinkField'}}
+    </div>
+    <div>
       <label {{bindAttr for='contextField.elementId'}}>Context</label>
       {{view Ember.TextArea valueBinding='context' name='context' viewName='contextField' id='context_textfield' rows="15"}}
     </div>

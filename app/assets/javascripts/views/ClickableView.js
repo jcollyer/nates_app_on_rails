@@ -13,3 +13,11 @@ App.EditPost = Ember.View.extend({
     //alert(URL);
   }
 });
+
+App.EditBook = Ember.View.extend({
+  click: function() {
+    var theID = $('#edit_button_id').text();
+    window.location = "/books/"+theID+"/edit"
+    //alert(URL);
+  }
+});

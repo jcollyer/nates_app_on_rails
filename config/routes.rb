@@ -23,8 +23,10 @@ App::Application.routes.draw do
 
   resources :lessons, :only => [:new, :edit]
   resources :posts, :only => [:new, :edit]
+  resources :books, :only => [:new, :edit]
   resources :biblebooks, :only => [:new, :edit]
-  get "posts/new"
+  # get "posts/new"
+
 
   root to: 'application#index'
 end

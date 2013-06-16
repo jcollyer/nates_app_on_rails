@@ -3,7 +3,7 @@ class Api::BooksPresenter
   attr_reader :books
 
   def initialize(books)
-    @book = book
+    @books = books
   end
 
   def as_json(options = {})
@@ -12,7 +12,7 @@ class Api::BooksPresenter
     }
   end
 
-  def book_array
+  def books_array
     books.map do |book|
       Api::BookPresenter.new(book).book_hash
     end

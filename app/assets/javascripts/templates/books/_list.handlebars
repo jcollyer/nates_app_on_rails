@@ -1,20 +1,22 @@
 <div class="row" id="books">
-  <div class="books_list small-12 large-6 columns">
+  <div class="small-12 large-4 columns">
+    <br><br>
+     <img {{bindAttr src="imageLargeUrl"}} class="image" />
+     <br><br><br>
+     {{buylink}}
+     <a href="http://www.amazon.com/The-No-Nonsense-Biblical-Nate-Holdridge/dp/1484053508" target="_blank" class="button" style="margin:0px 0 30px 100px">amazon</a>
+   </div>
+   <div class="small-12 large-8 columns">
+    <h1 style="text-align:left; margin:30px 0 0 0px;">{{title}}</h1>
+    <p style="margin:0px;">by &nbsp; <span class="hh2">Nate Holdridge</span></p>
     {{#linkTo "books.show" this}}
-      <h2>{{title}}</h2>
       <h2 class="books_summary">
         {{summary}}
       </h2>
     {{/linkTo}}
-      <p>{{date}}<p>
-  </div>
-  <div class="books_list small-12 large-6 columns">
-    <span class="border">
-      <img {{bindAttr src="imageMediumUrl"}} class="float_right image" />
-    </span>
-  </div>
-  <div class="books_list small-12 columns">
-    <p>{{context}}</p>
+     <p>{{context}}</p>
   </div>
 
 </div>
+<div class="row border_one">&nbsp;</div>
+

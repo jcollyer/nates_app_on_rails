@@ -17,10 +17,11 @@ class Api::BookPresenter
       :id => book.id,
       :title => book.title,
       :summary => book.summary,
-      :context => post.context,
-      :image_thumb_url => post.image.url(:thumb),
-      :image_medium_url => post.image.url(:medium),
-      :image_large_url => post.image.url(:large)
+      :buylink => book.buylink,
+      :context => book.context,
+      :image_thumb_url => book.image.url(:thumb),
+      :image_medium_url => book.image.url(:medium),
+      :image_large_url => book.image.url(:large)
     }
   end
 end

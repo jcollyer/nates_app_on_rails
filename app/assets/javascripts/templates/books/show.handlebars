@@ -1,15 +1,32 @@
 <div class="row">
-  <div class="book_info small-12 columns">
-    <h1>{{title}}</h1>
-    <p class="text_date">{{date}}</p>
-    <h2>{{summary}}</h2>
-    <img class="book_image" {{bindAttr src="imageLargeUrl"}}>
-    <p class="text_context">{{context}}</p>
+  <div class="small-12 large-4 columns">
+    <br><br>
+     <img {{bindAttr src="imageLargeUrl"}} class="image" />
+     <br><br><br>
+     <a href="{{buylink}}" target="_blank" class="button" style="margin:0px 0 30px 100px">amazon</a>
+   </div>
+   <div class="small-12 large-8 columns">
+    <h1 style="text-align:left; margin:30px 0 0 0px;">{{title}}</h1>
+    <p style="margin:0px;">by &nbsp; <span class="hh2">Nate Holdridge</span></p>
+    <h2 class="books_summary">
+      {{summary}}
+    </h2>
+     <p>{{context}}</p>
   </div>
 </div>
 <div class="view_bar">
+  {{#if currentUser.isSignedIn}}
   <div class="vew_bar_right">
-    {{#linkTo "books.edit" content class="button"}}Edit{{/linkTo}}
+    {{#view App.EditBook}}
+      <span id="edit_button_id">{{id}}</span>
+      <span class="button">Edit</span>
+    {{/view}}
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action 'destroy'}} class="button">Delete</a>
+  </div>
+  {{/if}}
+   <div class="vew_bar_right">
     {{#linkTo "books" class="button"}}Back{{/linkTo}}
   </div>
 </div>
