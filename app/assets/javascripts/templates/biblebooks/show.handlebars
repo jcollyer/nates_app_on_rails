@@ -5,13 +5,18 @@
   </div>
 </div>
 <div class="view_bar">
+  {{#if currentUser.isSignedIn}}
   <div class="vew_bar_right">
-    {{#linkTo "biblebooks" class="button"}}Back{{/linkTo}}
-  </div>
-  <div class="vew_bar_right">
-    {{#linkTo "books.edit" content class="button"}}Edit{{/linkTo}}
+    {{#view App.EditBiblebook}}
+      <span id="edit_button_id">{{id}}</span>
+      <span class="button">Edit</span>
+    {{/view}}
   </div>
   <div class="vew_bar_right">
     <a href='#' {{action 'destroy'}} class="button">Delete</a>
+  </div>
+  {{/if}}
+   <div class="vew_bar_right">
+    {{#linkTo "biblebooks" class="button"}}Back{{/linkTo}}
   </div>
 </div>

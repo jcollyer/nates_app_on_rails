@@ -21,3 +21,11 @@ App.EditBook = Ember.View.extend({
     //alert(URL);
   }
 });
+
+App.EditBiblebook = Ember.View.extend({
+  click: function() {
+    var theID = $('#edit_button_id').text();
+    window.location = "/biblebooks/"+theID+"/edit"
+    //alert(URL);
+  }
+});

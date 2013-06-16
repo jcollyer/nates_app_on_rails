@@ -114,11 +114,6 @@ a {
 
         <%= form_for @biblebook, :url => api_biblebook_path(@biblebook) do |form| %>
           <%= render "form", :form => form %>
-          <div>
-            <label></label>
-            <%= form.submit  :class => "button" %>
-            <a href="/#/biblebooks" class="button">&larr; Bible books</a>
-          </div>
         <% end %>
 
   </div>
