@@ -3,7 +3,7 @@
   margin:0px;
 }
 #lesson_mod {
-  background: #ccc;
+  background: #222;
   margin: 0px 0 0 0;
   position: fixed;
   bottom: 0px;
@@ -52,13 +52,14 @@
   padding: 3px 4px;
 }
 .progress_bar {
+  background: #ccc;
   border-radius: 130px;
   height: 12px;
-  background: #ccc;
 }
 .lesson_mod_time {
-  width: 100%;
   height: 24px;
+  margin:5px 0 0 0;
+  width: 100%;
 }
 .lesson_current_time {
   color: #ccc;
@@ -70,15 +71,13 @@
   width: 50%;
 }
 .lesson_current_time:before {
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 6px solid #ccc;
+  background: url('downarrow.png') no-repeat;
   content: "";
-  height: 0;
+  height: 10px;
   left: 5px;
   position: absolute;
-  bottom: -4px;
-  width: 0;
+  bottom: -8px;
+  width: 24px;
 }
 .lesson_duration {
   color: #ccc;
@@ -90,15 +89,13 @@
   position: relative;
 }
 .lesson_duration:before {
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 6px solid #ccc;
+  background: url('downarrow.png') no-repeat;
   content: "";
-  height: 0;
+  height: 10px;
+  left: 5px;
   position: absolute;
-  right: 8px;
-  bottom: -4px;
-  width: 0;
+  bottom: -8px;
+  width: 24px;
 }
 .lesson_mod_volume {
   display: block;
@@ -151,10 +148,13 @@
   height: 26px;
   margin: 0px;
 }
-.lesson_mod_info {
+.lesson_mod_info_container {
   float: left;
   width: 48%;
-  padding: 10px 0 0 0;
+  .lesson_mod_info{
+    padding: 10px;
+    text-align: center;
+  }
 }
 .lesson_mod_info h1 {
   color: #ccc;
@@ -177,11 +177,15 @@
 
 .social_container {
   position: relative;
+  .social_buttons{
+    padding:5px 0 0 0;
+  }
 }
 .social_icon{
-  height:33px;
+  height:31px;
   padding:3px;
   width:24px;
+  margin:0 0 0 80px;
 }
 .social_facebook {
   background: url('icon-facebook.png') no-repeat;
