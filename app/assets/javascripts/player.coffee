@@ -12,7 +12,7 @@ $ ->
     imagePath = thisParent.find(".play_this_lesson_image").attr('src')
   #  console.log(titlePath)
   #  console.log(summaryPath)
-  #  console.log(imagePath)
+    console.log(imagePath)
     $(".lesson_mod_info").empty()
     $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2>")
   #  $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2> <h2> "+datePath+" </h2>")
