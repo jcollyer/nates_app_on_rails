@@ -12,11 +12,13 @@ $ ->
     imagePath = thisParent.find(".play_this_lesson_image").attr('src')
   #  console.log(titlePath)
   #  console.log(summaryPath)
-    console.log(imagePath)
+  #  console.log(imagePath)
     $(".lesson_mod_info").empty()
     $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2>")
   #  $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2> <h2> "+datePath+" </h2>")
     $(".mod_img").attr("src", imagePath)
+    $(".download_teaching").attr("src")
+    $(".download_teaching").attr("src", mediaPath)
     window.player = $("#jquery_jplayer_1").jPlayer
       swfPath: "http://jplayer.org/latest/js"
       supplied: "mp3, oga"
@@ -40,3 +42,8 @@ $ ->
       player.jPlayer "play"
       $button.data "state", "playing"
       $button.removeClass "paused"
+
+
+$ ->
+  $(document).on "click", ".player_close_button", ->
+    $("#lesson_mod_menu").fadeOut();

@@ -360,7 +360,11 @@ a.button,
   height:57px;
   .footer_social_header{
     background:#ccc;
-    padding:6px
+    height:57px;
+    padding:6px;
+    h1{
+      font-size:120%;
+    }
   }
   .footer_social_box{
     display: block;
