@@ -8,10 +8,10 @@
   {{#linkTo "lessons.show" this}}
     <img {{bindAttr src="imageMediumUrl"}} class="play_this_lesson_image">
     <h2 class="lessons_summary">
-      <span class="hh1">{{title}}</span><br>
+     {{!  <span class="hh2">{{title}} {{!</span><br> }}
       {{summary}}
     </h2>
-    <h2>{{title}}</h2>
     {{! <h3>{{date}} {{! </h3> }}
   {{/linkTo}}
+   <h2>{{title}}</h2>
 </div>
