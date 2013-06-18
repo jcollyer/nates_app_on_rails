@@ -153,7 +153,7 @@
   width: 48%;
   .lesson_mod_info{
     padding: 10px;
-    text-align: center;
+    text-align: right;
   }
 }
 .lesson_mod_info h1 {
@@ -177,13 +177,13 @@
 
 
 .social_buttons{
-  margin:0 auto;
-  padding:5px 0 0 0;
-  width:180px;
+  float:right;
+  padding:10px 0 0 0;
+  width:162px;
   .social_icon{
     float:left;
     height:24px;
-    margin:-14px 15px 0;
+    margin:-14px 0px 0 27px;
     width:24px;
   }
   .social_facebook {
@@ -223,8 +223,9 @@
     a{
       background: url('icon-download.png') no-repeat;
       display:block;
+      float:right;
       height:20px;
-      margin:3px 0px 0 28px;
+      margin:70px -17px 0 0px;
       width:20px;
       &:hover{
         cursor:pointer;
