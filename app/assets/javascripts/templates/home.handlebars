@@ -1,15 +1,18 @@
 <div class="row home">
   <div class="small-12 large-6 columns home_left">
-    <p class="hh1">Go through the <span class="hh2">Bible</span></p>
+    <div class="title background_color_one">Go through the <span class="hh1"> Bible</span></div>
     <br />
     <p class="hh2">with pastor</p>
     <p class="hh3">Nate Holdridge</p>
     {{#linkTo "lessons.index" class="home_lessons_link"}}Teachings{{/linkTo}}
   </div>
   <div class="small-12 large-6 columns home_right">
-    <img src="/assets/nate.png" class="image" />
+    <div class="home_image">
+      <img src="/assets/nate.png" class="image border1" />
+    </div>
   </div>
 </div>
+<br><br><br><br><br><br>
 <div class="home_page_lessons">
   {{template "lessons/index"}}
 </div>

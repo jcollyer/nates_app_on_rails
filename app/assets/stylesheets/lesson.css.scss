@@ -2,6 +2,7 @@
 
 .lesson_wrapper {
   height:400px;
+  margin:40px;
   position:relative;
   width:400px;
   &:hover > .play_mark_large {
@@ -15,6 +16,10 @@
 
 .lesson_container{
   min-height:400px;
+}
+
+.lesson_show_title{
+  min-width:100%;
 }
 
 
