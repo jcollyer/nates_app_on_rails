@@ -128,10 +128,16 @@ a.button,
   background:$color-dark-blue;
 }
 
-.border1{
-  margin:3px;
-  padding:3px;
-  border:6px solid $color-light-blue;
+.biblebooks{
+  h1{
+    background: $color-light-blue;
+    padding: 20px;
+  }
+}
+
+.biblebook_border{
+  width:250px;
+  margin: 0 auto;
 }
 
 

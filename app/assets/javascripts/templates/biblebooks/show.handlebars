@@ -1,9 +1,20 @@
-<div class="row">
-  <div class="book_info small-12 columns">
+<div class="row background_color_one lesson_show_title">
+  <div class="lesson_info small-12 columns">
     <h1>{{name}}</h1>
-    <img class="book_image" {{bindAttr src="imageLargeUrl"}}>
+    {{! <p>{{date}} {{! </p> }}
   </div>
 </div>
+<div class="row">
+  <div class="small-12 large-6 columns">
+    <div class="lesson_wrapper">
+      <img class="book_image" {{bindAttr src="imageLargeUrl"}}>
+    </div>
+  </div>
+  <div class="lesson_container small-12 large-6 columns">
+     <h1>{{name}}</h1>
+  </div>
+</div>
+
 <div class="view_bar">
   {{#if currentUser.isSignedIn}}
   <div class="vew_bar_right">

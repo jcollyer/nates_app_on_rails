@@ -1,4 +1,4 @@
-<h1><span class="hh1">Bible books</span></h1>
+<div class="title background_color_two">bible <span class="hh1">books</span></div>
 {{#if currentUser.isSignedIn}}
 <div class="view_bar">
   <div class="vew_bar_right">
@@ -6,9 +6,13 @@
   </div>
 </div>
 {{/if}}
-{{#each model}}
-  {{partial "biblebooks/list"}}
-{{/each}}
+<div class="biblebooks">
+<ul>
+  {{#each model}}
+    {{partial "biblebooks/list"}}
+  {{/each}}
+</ul>
+</div>
 
 
 
