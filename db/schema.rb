@@ -11,14 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130623135147) do
+ActiveRecord::Schema.define(:version => 20130623153749) do
 
   create_table "biblebooks", :force => true do |t|
     t.string   "name"
-    t.string   "image"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.boolean  "testament"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "books", :force => true do |t|
@@ -47,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20130623135147) do
     t.string   "mp3_content_type"
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
+    t.integer  "biblebook_id"
   end
 
   create_table "posts", :force => true do |t|

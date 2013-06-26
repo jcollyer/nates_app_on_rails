@@ -5,6 +5,7 @@ App.BiblebooksIndexRoute = Em.Route.extend
 App.BiblebooksShowRoute = Em.Route.extend
   model: (params) ->
     App.Biblebook.find(params.biblebook_id)
+  #  App.Lesson.find()
 
 App.BiblebooksNewRoute = Em.Route.extend
   model: ->

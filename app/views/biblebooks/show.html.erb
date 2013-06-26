@@ -1,0 +1,7 @@
+<h1>Bible books</h1>
+<h2>teaching in <%= @biblebook.name %></h2>
+<ul>
+  <% @biblebook.lessons.each do |lesson| %>
+    <li><%= link_to lesson.title, lesson %></li>
+  <% end %>
+</ul>

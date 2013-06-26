@@ -5,6 +5,7 @@ $color-blue:#0ca7d3;
 $color-dark-blue:#025e79;
 $color-dark-blue2:#037394;
 $color-light-blue:#058db4;
+$color-light-blue2:#0197c2;
 
 body{
   background:$color-blue;
@@ -128,10 +129,31 @@ a.button,
   background:$color-dark-blue;
 }
 
-.biblebooks{
-  h1{
-    background: $color-light-blue;
-    padding: 20px;
+.biblebook_list {
+  background: $color-light-blue;
+  margin:70px 0px 0px;
+  padding: 20px 0 0 0;
+  h2{
+    padding:10px;
+  }
+  ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+    li{
+      border-top:1px solid $color-dark-blue;
+      color: #fff;
+      padding: 20px;
+      &:hover {
+        background: $color-dark-blue;
+      }
+    }
+    li:nth-child(odd){
+      background: $color-light-blue2;
+       &:hover {
+        background: $color-dark-blue;
+      }
+    }
   }
 }
 

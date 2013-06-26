@@ -5,6 +5,11 @@ class BiblebooksController < ApplicationController
     render :layout => nil
   end
 
+  def show
+    @biblebook = Biblebook.find(params[:id])
+    @lessons = @biblebook.lessons
+  end
+
   def edit
     @biblebook = Biblebook.find(params[:id])
 

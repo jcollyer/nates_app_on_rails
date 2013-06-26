@@ -21,10 +21,10 @@ App::Application.routes.draw do
     resources :biblebooks, :except => [:new, :edit]
   end
 
-  resources :lessons, :only => [:new, :edit]
+  resources :lessons, :only => [:new, :edit, :show]
   resources :posts, :only => [:new, :edit]
   resources :books, :only => [:new, :edit]
-  resources :biblebooks, :only => [:new, :edit]
+  resources :biblebooks, :only => [:new, :edit, :show]
   # get "posts/new"
 
 

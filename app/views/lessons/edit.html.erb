@@ -111,15 +111,19 @@ a {
 <div class="container">
   <div class="form_box">
     <h1>Edit Teaching</h1>
+    <h2>biblebook options</h2>
+    <% @biblebook.each do |biblebook| %>
+      <li><%= biblebook.name %> - <%= biblebook.id %></li>
+    <% end %>
 
-        <%= form_for @lesson, :url => api_lesson_path(@lesson) do |form| %>
-          <%= render "form", :form => form %>
-          <div>
-            <label></label>
-            <%= form.submit  :class => "button" %>
-            <a href="/#/lessons" class="button">&larr; Teachings</a>
-          </div>
-        <% end %>
+    <%= form_for @lesson, :url => api_lesson_path(@lesson) do |form| %>
+      <%= render "form", :form => form %>
+      <div>
+        <label></label>
+        <%= form.submit  :class => "button" %>
+        <a href="/#/lessons" class="button">&larr; Teachings</a>
+      </div>
+    <% end %>
 
   </div>
 </div>
