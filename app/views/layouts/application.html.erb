@@ -24,7 +24,6 @@
       <div class="loggedin clearfix">
         <p>Logged in as: &nbsp; <span class="hh1"><%= current_user.email %></span></p>
         <%= link_to "Log out", log_out_path, :class => "button", :style => "float:right;" %>
-        <a href="/#/biblebooks" class="button" style="float:right;">Bible books</a>
       </div>
     <% else %>
       <%# link_to "Sign up", sign_up_path %>

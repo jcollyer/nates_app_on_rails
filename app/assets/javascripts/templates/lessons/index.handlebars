@@ -1,15 +1,16 @@
 <div class="title background_color_two">nate's <span class="hh1">Teachings</span></div>
+{{#if currentUser.isSignedIn}}
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{! {{#linkTo "lessons.new" class="button create_button" }}    {{!  + New Lesson{{/linkTo}}
+    <a href="lessons/new" class="button">+ New Teaching</a>
+  </div>
+</div>
+{{/if}}
 <div class="row" id="lessons">
   {{#each model}}
     {{partial "lessons/list"}}
   {{/each}}
 
 </div>
-<div class="view_bar">
-	<div class="vew_bar_right">
-		{{! {{#linkTo "lessons.new" class="button create_button" }}    {{!  + New Lesson{{/linkTo}}
-  {{#if currentUser.isSignedIn}}
-    <a href="lessons/new" class="button">+ New Teaching</a>
-  {{/if}}
-	</div>
-</div>
+

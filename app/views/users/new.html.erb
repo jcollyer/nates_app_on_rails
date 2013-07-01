@@ -1,6 +1,6 @@
 <div class="edit_header">&nbsp;</div>
 
-<div class="container">
+<div class="container clearfix">
   <div class="form_box">
 
     <h1>Sign Up</h1>
@@ -17,18 +17,18 @@
         </div>
       <% end %>
       <div>
-        <%= f.label :email %><br />
+        <%= f.label :email %>
         <%= f.text_field :email %>
       </div>
       <div>
-        <%= f.label :password %><br />
+        <%= f.label :password %>
         <%= f.password_field :password %>
       </div>
       <div>
-        <%= f.label :password_confirmation %><br />
+        <label for="user_password_confirmation">confirm<br> password</label>
         <%= f.password_field :password_confirmation %>
       </div>
-      <div class="button"><%= f.submit %></div>
+      <%= f.submit :class => "button" %>
     <% end %>
 
   </div>

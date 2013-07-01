@@ -82,6 +82,7 @@ a{
 
 a.button,
 .button {
+  background: none;
   border: 1px solid #eee;
   color:#eee;
   font-size: 70%;
@@ -89,6 +90,7 @@ a.button,
   &:hover{
     background:#eee;
     color:$color-blue;
+    cursor:pointer;
   }
 }
 
@@ -129,9 +131,13 @@ a.button,
   background:$color-dark-blue;
 }
 
+.background_color_three{
+  background:$color-blue;
+}
+
 .biblebook_list {
   background: $color-light-blue;
-  margin:70px 0px 0px;
+  margin:40px 0px 0px;
   padding: 20px 0 0 0;
   h2{
     padding:10px;
@@ -140,18 +146,22 @@ a.button,
     list-style-type: none;
     margin:0px;
     padding:0px;
-    li{
-      border-top:1px solid $color-dark-blue;
-      color: #fff;
-      padding: 20px;
-      &:hover {
-        background: $color-dark-blue;
-      }
-    }
     li:nth-child(odd){
       background: $color-light-blue2;
        &:hover {
         background: $color-dark-blue;
+      }
+    }
+    li{
+      border-top:1px solid $color-dark-blue;
+      color: #fff;
+      a{
+        display:block;
+        padding: 20px;
+        &:hover {
+          background: $color-dark-blue;
+          color: #fff;
+        }
       }
     }
   }
@@ -180,7 +190,7 @@ a.button,
 
 .view_bar{
   height:60px;
-  padding:0px 80px;
+  padding:10px 80px 0px;
   width:100%;
   .vew_bar_right{
     float:right;
@@ -205,8 +215,7 @@ a.button,
 
 .form_box{
   margin:20px auto;
-  min-height:400px;
-  width:360px;
+  width:390px;
   h1{margin:30px auto;}
   form{
     float:left;
@@ -236,6 +245,7 @@ a.button,
         font-size:18px;
         height:40px;
         min-width:250px;
+        max-width: 270px;
         padding:5px;
         ::-webkit-input-placeholder{
         }
@@ -248,17 +258,6 @@ a.button,
   margin:0 0 0 2px;
   width:250px;
 }
-
-.home_lessons_link{
-  border:1px solid #eee;
-  color:#eee;
-  padding:20px 80px;
-  &:hover{
-    background:#eee;
-    color:#222;
-  }
-}
-
 
 .the_top_nav{
   background:#222;
@@ -298,9 +297,30 @@ a.button,
   }
 }
 
+.home_lessons_link{
+  border:1px solid #eee;
+  color:#eee;
+  padding:20px 80px;
+  &:hover{
+    background:#eee;
+    color:#222;
+  }
+}
 .home{
+  min-width:100%;
+  background: #037495;
+  background: -moz-linear-gradient(45deg,  #037495 0%, #0ca7d3 51%, #3bb2d3 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#037495), color-stop(51%,#0ca7d3), color-stop(100%,#3bb2d3));
+  background: -webkit-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: -o-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: -ms-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037495', endColorstr='#3bb2d3',GradientType=1 );
   .home_left{
+    margin: 0 auto;
     padding:40px;
+    width:360px;
+
   }
   .home_right{
     padding:30px;

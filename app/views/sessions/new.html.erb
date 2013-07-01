@@ -1,4 +1,4 @@
-<div class="form_box" style="min-height:200px;">
+<div class="form_box clearfix">
   <h1>Log in</h1>
 
   <%= form_tag sessions_path do %>
@@ -11,6 +11,7 @@
       <%= password_field_tag :password %>
     </div>
     <div>
-      <%= submit_tag "Log in", :class => "button" %>
+      <%= submit_tag "Log in", :class => "button log_in_button" %>
     </div>
   <% end %>
+</div>
