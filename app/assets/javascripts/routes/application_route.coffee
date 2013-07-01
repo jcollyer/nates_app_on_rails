@@ -35,7 +35,7 @@ App.Router.map ->
 
 App.HomeRoute = Em.Route.extend
   model: ->
-    App.Lesson.find()
+    App.Biblebook.find()
 
 App.PlayerRoute = Em.Route.extend
   model: ->
