@@ -14,7 +14,7 @@
 
 #lesson_mod_menu {
   background: #222;
-  display:none;
+//  display:none;
   height: 100px;
   max-width: 100%;
   width: 100%;
@@ -185,6 +185,9 @@
     height:24px;
     margin:-14px 0px 0 27px;
     width:24px;
+    a{
+      display:block;
+    }
   }
   .social_facebook {
     background: url('icon-facebook.png') no-repeat;
@@ -197,6 +200,9 @@
   .social_google {
     background: url('icon-google-plus.png') no-repeat;
     background-size:100%;
+    img{
+      height:0px;
+    }
   }
 }
 
