@@ -5,5 +5,6 @@ App.Lesson = DS.Model.extend
   imageThumbUrl: DS.attr('string')
   imageMediumUrl: DS.attr('string')
   imageLargeUrl: DS.attr('string')
-  createdAt: DS.attr('date')
   mp3: DS.attr('string')
+  biblebook: DS.belongsTo('App.Biblebook')
+  createdAt: DS.attr('date')

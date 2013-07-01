@@ -4,5 +4,6 @@ App.Biblebook = DS.Model.extend
   imageThumbUrl: DS.attr('string')
   imageMediumUrl: DS.attr('string')
   imageLargeUrl: DS.attr('string')
+  lessons: DS.hasMany('App.Lesson')
   createdAt: DS.attr('date')
 

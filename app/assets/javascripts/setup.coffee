@@ -5,3 +5,7 @@ App.Store = DS.Store.extend
 
 DS.RESTAdapter.reopen
   namespace: 'api'
+
+DS.RESTAdapter.map 'App.Biblebook',
+  lessons: embedded: 'always'
+# lessons: embedded: 'load'
