@@ -12,6 +12,7 @@ class Api::LessonsController < ApplicationController
 
 	def create
 		lesson = Lesson.create! do |instance|
+			instance.biblebook_id = params[:lesson][:biblebook_id]
 			instance.title = params[:lesson][:title]
 			instance.summary = params[:lesson][:summary]
 			instance.image = params[:lesson][:image]
@@ -23,6 +24,7 @@ class Api::LessonsController < ApplicationController
 
 	def update
 		lesson = Lesson.find(params[:id])
+	  lesson.biblebook_id = params[:lesson][:biblebook_id]
 		lesson.title = params[:lesson][:title]
 		lesson.summary = params[:lesson][:summary]
 	  lesson.image = params[:lesson][:image] if params[:lesson][:image].present?

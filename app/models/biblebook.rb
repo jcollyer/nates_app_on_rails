@@ -1,5 +1,6 @@
 class Biblebook < ActiveRecord::Base
-#  attr_accessor :image_file_name
+  attr_accessor :image_file_name
+
   has_many :lessons
 
   has_attached_file :image,

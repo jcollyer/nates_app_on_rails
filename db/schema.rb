@@ -15,12 +15,10 @@ ActiveRecord::Schema.define(:version => 20130623153749) do
 
   create_table "biblebooks", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+    t.string   "image"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.boolean  "testament"
   end
 
   create_table "books", :force => true do |t|
