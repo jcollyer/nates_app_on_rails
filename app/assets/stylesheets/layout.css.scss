@@ -33,6 +33,13 @@ body{
   margin:0px;
 }
 
+.small_center{
+  @media all and (max-width: 767px){
+  width: 360px;
+  margin: 0 auto;
+  }
+}
+
 p{
   color:#eee;
   line-height: 1.5em;
@@ -122,6 +129,11 @@ a.button,
   text-align: center;
 }
 
+.hide_mobile{
+  @media all and (max-width: 767px) {
+    display:none
+  }
+}
 .background_color_one{
   background:$color-light-blue;
 }
@@ -141,7 +153,6 @@ a.button,
 
 .biblebook{
   min-width: 100%;
-
 }
 .biblebook_list {
   background: $color-light-blue;
@@ -177,7 +188,7 @@ a.button,
 
 .biblebook_border{
   width:250px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 

@@ -6,22 +6,7 @@
     {{! <p>{{date}} {{! </p> }}
   </div>
 </div>
-<div class="row">
-  <div class="lesson_container small-12 large-6 columns">
-    <div class="lesson_wrapper">
-      <img class="lesson_image play_this_lesson_image" {{bindAttr src="imageLargeUrl"}}>
-      <div class="play_mark_large play_button paused">
-        <div class="play_this_lesson_mp3">{{mp3}}</div>
-        <div class="play_this_lesson_title" style="display:none">{{title}}</div>
-        <div class="play_this_lesson_summary" style="display:none">{{summary}}</div>
-        <div class="play_this_lesson_date" style="display:none">{{date}}</div>
-      </div>
-    </div>
-  </div>
-  <div class="lesson_container small-12 large-6 columns">
 
-  </div>
-</div>
 <div class="view_bar">
   {{#if currentUser.isSignedIn}}
   <div class="vew_bar_right">
@@ -36,5 +21,23 @@
   {{/if}}
    <div class="vew_bar_right">
     {{#linkTo "lessons" class="button"}}Back{{/linkTo}}
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="lesson_container small-12 large-6 columns">
+    <div class="lesson_wrapper">
+      <img class="lesson_image play_this_lesson_image" {{bindAttr src="imageLargeUrl"}}>
+      <div class="play_mark_large play_button paused">
+        <div class="play_this_lesson_mp3">{{mp3}}</div>
+        <div class="play_this_lesson_title" style="display:none">{{title}}</div>
+        <div class="play_this_lesson_summary" style="display:none">{{summary}}</div>
+        <div class="play_this_lesson_date" style="display:none">{{date}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="lesson_container small-12 large-6 columns">
+
   </div>
 </div>
