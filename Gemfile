@@ -4,6 +4,7 @@ ruby "1.9.3"
 
 gem "rails", "3.2.6"
 gem "pg"
+gem "debugger"
 gem "jquery-rails"
 gem "ember-rails"
 gem "momentjs-rails"
