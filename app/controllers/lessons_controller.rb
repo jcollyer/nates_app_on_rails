@@ -1,6 +1,9 @@
 class LessonsController < ApplicationController
   def new
 		@lesson = Lesson.new
+
+
+
     render :layout => nil
   end
 
@@ -11,7 +14,6 @@ class LessonsController < ApplicationController
   def edit
     @lesson = Lesson.find(params[:id])
 
-    @biblebook = Biblebook.all
 		render :layout => nil
   end
 
