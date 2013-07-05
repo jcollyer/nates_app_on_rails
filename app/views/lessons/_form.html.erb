@@ -3,6 +3,10 @@
   <%= form.text_field :title %>
 </div>
 <div>
+  <%= form.label :refurl %>
+  <%= form.text_field :refurl %>
+</div>
+<div>
   <label>Bible book</label>
   <div class="collection"><%= form.collection_select(:biblebook_id, Biblebook.all, :id, :name) %></div>
 </div>

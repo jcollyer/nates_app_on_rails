@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130702135515) do
+ActiveRecord::Schema.define(:version => 20130704171907) do
 
   create_table "biblebooks", :force => true do |t|
     t.string   "name"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20130702135515) do
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
     t.integer  "biblebook_id"
+    t.string   "refurl"
   end
 
   create_table "posts", :force => true do |t|

@@ -20,7 +20,8 @@ class Api::LessonPresenter
 			:image_thumb_url => lesson.image.url(:thumb),
 			:image_medium_url => lesson.image.url(:medium),
 			:image_large_url => lesson.image.url(:large),
-			:mp3 => lesson.mp3
+			:mp3 => lesson.mp3,
+			:refurl => lesson.refurl
 		}
 	end
 end

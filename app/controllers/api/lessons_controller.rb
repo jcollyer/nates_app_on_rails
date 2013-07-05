@@ -16,6 +16,7 @@ class Api::LessonsController < ApplicationController
 			instance.title = params[:lesson][:title]
 			instance.summary = params[:lesson][:summary]
 			instance.image = params[:lesson][:image]
+			instance.refurl = params[:lesson][:refurl]
 			instance.mp3 = params[:lesson][:mp3]
 		end
 		# render :json => Api::LessonPresenter.new(lesson), :status => :created
@@ -29,6 +30,7 @@ class Api::LessonsController < ApplicationController
 		lesson.summary = params[:lesson][:summary]
 	  lesson.image = params[:lesson][:image] if params[:lesson][:image].present?
 	  lesson.mp3 = params[:lesson][:mp3] if params[:lesson][:mp3].present?
+		lesson.refurl = params[:lesson][:refurl]
 		lesson.save!
 		# render :json => Api::LessonPresenter.new(lesson), :status => :accepted
 		redirect_to "/#/lessons"

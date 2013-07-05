@@ -7,18 +7,16 @@ $ ->
     thisParent = $button.parent()
     mediaPath =  $button.find(".play_this_lesson_mp3").text()
     titlePath = $button.find(".play_this_lesson_title").text()
-    summaryPath = $button.find(".play_this_lesson_summary").text()
-  # datePath = $button.find(".play_this_lesson_date").text()
+    refurlPath = $button.find(".play_this_lesson_refurl").text()
     imagePath = thisParent.find(".play_this_lesson_image").attr('src')
-  # console.log(titlePath)
-  # console.log(summaryPath)
-  # console.log(imagePath)
+    console.log refurlPath
     $(".lesson_mod_info").empty()
-    $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2>")
-  # $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1> <h2> "+summaryPath+" </h2> <h2> "+datePath+" </h2>")
+    $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
     $(".mod_img").attr("src", imagePath)
-    $(".download_teaching").attr("src")
-    $(".download_teaching").attr("src", mediaPath)
+    $(".player_download_url").attr("src")
+    $(".player_download_url").attr("src", mediaPath)
+    $(".player_refurl").attr("href")
+    $(".player_refurl").attr("href", refurlPath)
     window.player = $("#jquery_jplayer_1").jPlayer
       swfPath: "http://jplayer.org/latest/js"
       supplied: "mp3, oga"
