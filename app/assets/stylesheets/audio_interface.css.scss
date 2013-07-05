@@ -151,6 +151,34 @@
   }
 }
 
+.play_mark_list {
+  border: 2px solid #fff;
+  border-radius:35px;
+  float:left;
+  height:50px;
+  margin:4px 0 0 9px;
+  opacity:0.80;
+  position:relative;
+  top:50%;
+  width:50px;
+  z-index:9;
+  &:hover{
+    cursor:pointer;
+    opacity:1;
+  }
+  &:before {
+    border-left: 30px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    content:"";
+    height: 0;
+    left:11px;
+    position:absolute;
+    top:8px;
+    width: 0;
+  }
+}
+
 .pause_mark_small {
   border: 2px solid #fff;
   border-radius:35px;

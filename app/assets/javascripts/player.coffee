@@ -48,3 +48,46 @@ $ ->
     player.jPlayer "pause"
     $(".footer").css "margin-bottom", "0px"
 
+$ ->
+  $(document).on "click", ".play_this_teaching", ->
+    audioPlayer = $("#lesson_mod_menu")
+    $(".footer").css "margin-bottom", "100px"
+    audioPlayer.fadeIn()
+    $button = $(this)
+    mediaPath =  $button.data("mp3")
+    titlePath = $button.data("title")
+    refurlPath = $button.data("refurl")
+    imagePath = $button.data("image")
+    console.log refurlPath
+    console.log imagePath
+    $(".lesson_mod_info").empty()
+    $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
+    $(".mod_img").attr("src", imagePath)
+    $(".player_download_url").attr("src")
+    $(".player_download_url").attr("src", mediaPath)
+    $(".player_refurl").attr("href")
+    $(".player_refurl").attr("href", refurlPath)
+    window.player = $("#jquery_jplayer_1").jPlayer
+      swfPath: "http://jplayer.org/latest/js"
+      supplied: "mp3, oga"
+      ready: ->
+        player.bind $.jPlayer.event.play, ->
+        # console.log "play event"
+          $button.removeClass "paused"
+        player.bind $.jPlayer.event.pause, ->
+        # console.log "pause event"
+          $button.addClass "paused"
+
+    if $button.data("state") == "playing"
+    # console.log "clicked pause"
+      player.jPlayer "pause"
+      $button.data "state", "paused"
+    else
+    # console.log "clicked play"
+      player.jPlayer "setMedia", {
+        mp3: mediaPath
+      }
+      player.jPlayer "play"
+      $button.data "state", "playing"
+      $button.removeClass "paused"
+
