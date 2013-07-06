@@ -207,6 +207,10 @@ a.button,
     float:left;
     margin:20px 10px 20px;
     width:23%;
+    p{
+      padding:10px;
+      text-align: center;
+    }
     @media all and (max-width: "1000px"){
       margin:20px 1% 20px 4%;
       width:44%;
@@ -222,6 +226,8 @@ a.button,
   margin:0 auto;
   width:86%;
   .bb_image{
+    border-bottom:1px solid rgba(255,255,254,0.3);
+    border-right:1px solid rgba(255,255,254,0.3);
     width:90%;
     @media all and (max-width: "525px"){
       width:100%;
@@ -235,7 +241,6 @@ a.button,
 
 
 .container {
-  margin:0px 0 20px 0;
   h1{
     margin:20px auto;
     text-align:center;
@@ -334,7 +339,17 @@ a.button,
 
 .the_top_nav{
   background:#222;
-  min-width: 100%;
+  width: 100%;
+  .top_nav_left{
+    float:left;
+    padding:10px;
+    width:70%;
+  }
+  .top_nav_right{
+    float:left;
+    padding:10px;
+    width:30%;
+  }
   .calvary_link{
       margin:17px 0 0 0px;
     a{
@@ -342,30 +357,6 @@ a.button,
       padding:0px 0 0 30px;
     }
     text-align: left;
-  }
-  .nav_slice{
-    background:#222;
-    border-top:1px solid #333;
-    font-size:80%;
-    list-style-type:none;
-    margin:0px;
-    padding:0px;
-    text-align:center;
-    .nav_piece{
-      border-left:1px solid #333;
-      float:left;
-      .active{
-        background:#444;
-      }
-      a{
-        color:#eee;
-        display:block;
-        padding:16px 0;
-        &:hover{
-          background:#2f2f2f;
-        }
-      }
-    }
   }
 }
 
@@ -402,91 +393,6 @@ a.button,
   min-height: 300px;
   width:80%
 }
-
-.footer{
-  bottom:0px;
-  margin:0;
-  width:100%;
-  padding:0px 0 0 0;
-  position: relative;
-  z-index:98;
-  .footer_links{
-    background: #fff;
-    min-width: 100%;
-  a{
-    border-top:4px solid #999;
-    color:#666;
-    display:block;
-    padding:20px;
-    &:hover{
-      background:#999;
-      color:#fff;
-    }
-  }
-  .footer_link{
-    background:#fff;
-    border-left:1px solid #ddd;
-    padding:0px;
-    text-align: center;
-  }
-  .footer_link:first-child{border:none;}
-}
-}
-
-.footer_social{
-  background: #fff;
-  min-width:100%;
-  height:57px;
-  .footer_social_header{
-    background:#ccc;
-    height:57px;
-    padding:6px;
-    h1{
-      font-size:120%;
-    }
-  }
-  .footer_social_box{
-    display: block;
-    color:#fff;
-    text-align: center;
-    width:100%;
-  }
-  .footer_social_boxes{
-    padding:0px;
-    .footer_social_facebook{
-      background:#3B5998;
-      border-top:5px solid #35518d;
-      height:28px;
-      padding:4px;
-       &:hover{
-        background:#35518d;
-      }
-    }
-    .footer_social_twitter{
-      background:#4099ff;
-      border-top:5px solid #2f76c3;
-      padding:4px;
-      height:29px;
-      &:hover{
-        background:#2f76c3;
-      }
-    }
-  }
-  .footer_calvary_link{
-    background:#222;
-    color:#999;
-    display: block;
-    font-size: 160%;
-    height:57px;
-    padding:16px;
-    text-align: center;
-    &:hover{
-      background:#111;
-    }
-  }
-}
-
-
 
 
 /** Media Queries  **/
