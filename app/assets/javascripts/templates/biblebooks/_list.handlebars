@@ -1,15 +1,11 @@
-<div class="row biblebook">
-  <div class="books_list small-12 large-6 columns">
+<div class="grid_box_holder">
+  <div class="grid_box">
     {{#linkTo "biblebooks.show" this}}
-      <h1>{{name}}</h1>
+      <div class="biblebook_image">
+        <img {{bindAttr src="imageMediumUrl"}} class="bb_image" />
+      </div>
     {{/linkTo}}
   </div>
-  <div class="books_list small-12 large-6 columns">
-    {{#linkTo "biblebooks.show" this}}
-    <div class="biblebook_border">
-      <img {{bindAttr src="imageMediumUrl"}} class="image" />
-    </div>
-    {{/linkTo}}
-  </div>
-
 </div>
+
+

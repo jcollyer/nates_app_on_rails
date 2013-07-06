@@ -7,6 +7,17 @@ $color-dark-blue2:#037394;
 $color-light-blue:#058db4;
 $color-light-blue2:#0197c2;
 
+@mixin blue-grad {
+  background: #037495;
+  background: -moz-linear-gradient(45deg,  #037495 0%, #0ca7d3 51%, #3bb2d3 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#037495), color-stop(51%,#0ca7d3), color-stop(100%,#3bb2d3));
+  background: -webkit-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: -o-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: -ms-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  background: linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037495', endColorstr='#3bb2d3',GradientType=1 );
+}
+
 body{
   background:$color-blue;
   font-family:$font-body;
@@ -140,20 +151,22 @@ a.button,
 
 .background_color_two{
   background:$color-dark-blue;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  opacity:0.4;
 }
 
 .background_color_three{
   background:$color-blue;
 }
-.biblebooks{
-  .biblebook:nth-child(odd){
-    background: $color-light-blue2;
-  }
+
+.background_grad_one{
+  @include blue-grad;
+}
+.background_image_one{
+  background:url("back1.png");
 }
 
-.biblebook{
-  min-width: 100%;
-}
 .biblebook_list {
   background: $color-light-blue;
   margin:40px 0px 0px;
@@ -186,9 +199,34 @@ a.button,
   }
 }
 
-.biblebook_border{
-  width:250px;
-  margin: 10px auto;
+.grid_box_holder{
+  background: blue;
+  max-width: 1200px;
+  margin:0 auto;
+  .grid_box{
+    float:left;
+    margin:20px 10px 20px;
+    width:23%;
+    @media all and (max-width: "1000px"){
+      margin:20px 1% 20px 4%;
+      width:44%;
+    }
+    @media all and (max-width: "525px"){
+      margin:10px 0px 20px;
+      width:100%;
+    }
+  }
+}
+
+.biblebook_image{
+  margin:0 auto;
+  width:86%;
+  .bb_image{
+    width:90%;
+    @media all and (max-width: "525px"){
+      width:100%;
+    }
+  }
 }
 
 .play_this_teaching_title{
@@ -204,9 +242,23 @@ a.button,
   }
 }
 
-.home_image{
-  margin:0 auto;
-  width:350px;
+.home{
+  .home_title{
+    float:left;
+    padding:20px;
+    width:90%;
+    p{
+      font-size: 140%;
+      line-height: 1.4em;
+      margin:0px;
+      padding:0px;
+    }
+  }
+
+  .home_image{
+    float:left;
+    width:10%
+  }
 }
 
 .view_bar{
@@ -295,7 +347,6 @@ a.button,
     background:#222;
     border-top:1px solid #333;
     font-size:80%;
-    height:47px;
     list-style-type:none;
     margin:0px;
     padding:0px;
@@ -318,33 +369,6 @@ a.button,
   }
 }
 
-.home_lessons_link{
-  border:1px solid #eee;
-  color:#eee;
-  padding:20px 80px;
-  &:hover{
-    background:#eee;
-    color:#222;
-  }
-}
-.home{
-  min-width:100%;
-  background: #037495;
-  background: -moz-linear-gradient(45deg,  #037495 0%, #0ca7d3 51%, #3bb2d3 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#037495), color-stop(51%,#0ca7d3), color-stop(100%,#3bb2d3));
-  background: -webkit-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
-  background: -o-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
-  background: -ms-linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
-  background: linear-gradient(45deg,  #037495 0%,#0ca7d3 51%,#3bb2d3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037495', endColorstr='#3bb2d3',GradientType=1 );
-  .home_left{
-    margin: 0 auto;
-    padding:40px;
-  }
-  .home_right{
-    padding:30px;
-  }
-}
 
 .show_container{
   .show_box{
@@ -488,9 +512,6 @@ a.button,
 
   .hh1, .hh2, .hh3{
     text-align: center;
-  }
-  .home_lessons_link{
-    padding:4% 43%;
   }
 }
 
