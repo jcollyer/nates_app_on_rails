@@ -44,6 +44,10 @@ body{
   margin:0px;
 }
 
+.row-full{
+  max-width: 100%;
+}
+
 .small_center{
   @media all and (max-width: 767px){
   width: 360px;
@@ -129,6 +133,13 @@ a.button,
   z-index: 9;
 }
 
+.family_image{
+  background: rgba(255,255,255,0.6);
+  border-radius: 110%;
+  border:1px solid rgba(100,100,100,0.4);
+  float:right;
+}
+
 .box{
   padding:10px 20px;
 }
@@ -165,6 +176,12 @@ a.button,
 }
 .background_image_one{
   background:url("back1.png");
+}
+
+.banner{
+  padding:15px;
+  color:#fff;
+  line-height: 1.5em;
 }
 
 .biblebook_list {
