@@ -1,18 +1,16 @@
-<div class="row the_top_nav">
-  <div class="small-12 large-4 columns nav_slice">
+<div class="the_top_nav clearfix">
+  <div class="top_nav_left">
     <div class="calvary_link"><a href="http://www.calvary.com">Calvary.com</a></div>
+    <div class="">{{#linkTo "home"}}home{{/linkTo}}</div>
+    <div class="">{{#linkTo "biblebooks.index"}}bible books{{/linkTo}}</div>
+    <div class="">{{#linkTo "lessons.index"}}teachings{{/linkTo}}</div>
   </div>
-  <div class="small-12 large-4 columns nav_slice">
-    <div class="row">
-      <div class="small-4 colums nav_piece">{{#linkTo "home"}}home{{/linkTo}}</div>
-      <div class="small-4 colums nav_piece">{{#linkTo "biblebooks.index"}}bible books{{/linkTo}}</div>
-      <div class="small-4 colums nav_piece">{{#linkTo "lessons.index"}}teachings{{/linkTo}}</div>
-      <div class="small-4 colums nav_piece">{{#linkTo "books.index"}}reading{{/linkTo}}</div>
-    </div>
+  <div class="top_nav_right">
+    <div class="nate_button button">{{#linkTo "books.index"}}Nate Holdridge{{/linkTo}}</div>
   </div>
 </div>
 
-<div class="container clearfix">
+<div class="container background_grad_one clearfix">
   {{outlet}}
 </div>
 
