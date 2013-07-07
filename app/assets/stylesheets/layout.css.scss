@@ -109,10 +109,12 @@ a.button,
   color:#eee;
   font-size: 70%;
   padding:15px;
+  transition: all 0.5s ease;
   &:hover{
     background:#eee;
     color:$color-blue;
     cursor:pointer;
+    transition: all 0.2s ease;
   }
 }
 
@@ -228,11 +230,11 @@ a.button,
       padding:10px;
       text-align: center;
     }
-    @media all and (max-width: "1000px"){
+    @media all and (max-width: 1000px){
       margin:20px 1% 20px 4%;
       width:44%;
     }
-    @media all and (max-width: "525px"){
+    @media all and (max-width: 525px){
       margin:10px 0px 20px;
       width:100%;
     }
@@ -246,7 +248,7 @@ a.button,
     border-bottom:1px solid rgba(255,255,254,0.3);
     border-right:1px solid rgba(255,255,254,0.3);
     width:90%;
-    @media all and (max-width: "525px"){
+    @media all and (max-width: 525px){
       width:100%;
     }
   }
@@ -268,7 +270,7 @@ a.button,
   .home_title{
     float:left;
     padding:20px;
-    width:90%;
+    width:80%;
     p{
       font-size: 140%;
       line-height: 1.4em;
@@ -279,7 +281,7 @@ a.button,
 
   .home_image{
     float:left;
-    width:10%
+    width:12%
   }
 }
 
@@ -354,26 +356,117 @@ a.button,
   width:250px;
 }
 
+.hamburger{
+  background:#222;
+  height:40px;
+  width:100%;
+  #hamburger_icon{
+    background: url("icon-hamburger.png") no-repeat;
+    float:left;
+    height: 20px;
+    margin:7px 3px 0px 10px;
+    padding-right:6%;
+    width:26px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
 .the_top_nav{
   background:#222;
+  margin-top:-140px;
+  position:absolute;
   width: 100%;
+  .nav_close_button{
+    border:1px solid #fff;
+    border-radius:15px;
+    color:#fff;
+    font-size: 80%;
+    height:16px;
+    right:3%;
+    top:10px;
+    padding:1px 3px;
+    position:absolute;
+    width:16px;
+    &:hover{
+      background:#fff;
+      color:#222;
+      cursor:pointer;
+    }
+  }
   .top_nav_left{
     float:left;
-    padding:10px;
+    padding-right:35%;
     width:70%;
+    @media all and (max-width: 767px){
+      width:50%;
+      padding-right:0%;
+    }
   }
   .top_nav_right{
     float:left;
-    padding:10px;
     width:30%;
-  }
-  .calvary_link{
-      margin:17px 0 0 0px;
-    a{
-      color:white;
-      padding:0px 0 0 30px;
+    @media all and (max-width: 767px){
+      width:50%;
     }
-    text-align: left;
+    .nate_button{
+      margin:20px;
+      text-align: center;
+      width:170px;
+      @media all and (max-width: 767px){
+        margin:20px 0 0 0;
+        width:100%;
+      }
+      a{
+        border:1px solid #fff;
+        color:#fff;
+        padding:10px 15px;
+        transition: background 0.5s ease;
+        &:hover{
+          background:#fff;
+          color:#222;
+          transition: background 0.2s ease;
+        }
+      }
+    }
+    .calvary_link{
+      margin:17px 0 10px 0px;
+      text-align: left;
+      @media all and (max-width: 767px){
+        text-align: center;
+      }
+      a{
+        color:white;
+        padding:0px 0 0 30px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .top_nav{
+    border-left: 1px solid $color-blue;
+    margin:3px 5%;
+    position:relative;
+    @media all and (max-width: 767px){
+      background: $color-blue;
+      border-bottom: 1px solid $color-light-blue2;
+      margin:0px;
+    }
+    a{
+      color:#eee;
+      display: block;
+      line-height: 1.7em;
+      padding-left:10px;
+      transition: all 0.5s ease;
+      &:hover{
+        background:$color-dark-blue2;
+        transition: all 0.2s ease;
+      }
+      @media all and (max-width: 767px){
+        display: block;
+      }
+    }
   }
 }
 
@@ -413,7 +506,7 @@ a.button,
 
 
 /** Media Queries  **/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   .lesson_mod{
     height:auto;
     .lesson_mod_menu{
