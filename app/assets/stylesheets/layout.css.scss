@@ -361,6 +361,7 @@ a.button,
   height:33px;
   width:100%;
   #hamburger_icon{
+    cursor: pointer;
     float:left;
     height: 20px;
     margin:7px 3px 0px 10px;
@@ -385,7 +386,6 @@ a.button,
       top:14px;
     }
     &:hover{
-      cursor: pointer;
     }
   }
 }
