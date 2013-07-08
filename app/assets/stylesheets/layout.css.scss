@@ -400,6 +400,7 @@ a.button,
     border:1px solid #fff;
     border-radius:15px;
     color:#fff;
+    cursor:pointer;
     font-size: 80%;
     height:16px;
     right:3%;
@@ -407,10 +408,22 @@ a.button,
     padding:1px 3px;
     position:absolute;
     width:16px;
+    z-index: 999;
+    @media all and (max-width: 767px){
+      border-radius: 0px;
+      border-left:1px solid #fff;
+      border-bottom:1px solid #fff;
+      border-top:none;
+      border-right:none;
+      top:0px;
+      height:28px;
+      right:0px;
+      padding:6px 11px;
+      width:30px;
+    }
     &:hover{
       background:#fff;
       color:#222;
-      cursor:pointer;
     }
   }
   .top_nav_left{
@@ -418,7 +431,7 @@ a.button,
     padding-right:35%;
     width:70%;
     @media all and (max-width: 767px){
-      width:50%;
+      width:35%;
       padding-right:0%;
     }
   }
@@ -426,25 +439,58 @@ a.button,
     float:left;
     width:30%;
     @media all and (max-width: 767px){
-      width:50%;
+      width:65%;
     }
-    .nate_button{
-      margin:20px;
+    .nav_action_buttons{
+      margin:20px 0 0 0;
       text-align: center;
-      width:170px;
+      position:relative;
+      width:160px;
       @media all and (max-width: 767px){
-        margin:20px 0 0 0;
+        margin:15px 0 0 0;
         width:100%;
       }
-      a{
-        border:1px solid #fff;
-        color:#fff;
-        padding:10px 15px;
-        transition: background 0.5s ease;
-        &:hover{
-          background:#fff;
-          color:#222;
-          transition: background 0.2s ease;
+      .nate_button{
+        a{
+          border:1px solid #fff;
+          color:#fff;
+          padding:10px 15px;
+          transition: background 0.5s ease;
+          &:hover{
+            background:#fff;
+            color:#222;
+            transition: background 0.2s ease;
+          }
+        }
+      }
+      .nate_socials{
+        left:170px;
+        top:6px;
+        position:absolute;
+        width:70px;
+        @media all and (max-width: 767px){
+          left:54%;
+          top:33px;
+        }
+        .nate_social{
+          cursor: pointer;
+          float:left;
+          height:26px;
+          margin:0 7px 0 0px;
+          opacity:0.8;
+          transition: opacity 0.3s ease;
+          width:26px;
+          &:hover{
+            opacity:1;
+          }
+        }
+        .ns_twitter{
+          background:url("icon-twitter-white.png") no-repeat;
+          background-size:100%;
+        }
+        .ns_instagram{
+          background:url("icon-instagram.png") no-repeat;
+          background-size:100%;
         }
       }
     }
@@ -452,11 +498,12 @@ a.button,
       margin:17px 0 10px 0px;
       text-align: left;
       @media all and (max-width: 767px){
+        margin:7px 53px 10px 0px;
         text-align: center;
       }
       a{
         color:white;
-        padding:0px 0 0 30px;
+        padding:0px 0 0 2px;
         &:hover{
           text-decoration: underline;
         }
@@ -475,7 +522,7 @@ a.button,
       color:#eee;
       display: block;
       line-height: 1.4em;
-      padding-left:10px;
+      padding-left:6px;
       transition: all 0.5s ease;
       @media all and (max-width: 767px){
         line-height: 1.9em;
