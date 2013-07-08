@@ -296,10 +296,8 @@ a.button,
 }
 
 #user_nav{
-  left:130px;
-  top:18px;
+  position:relative;
   z-index: 99;
-
 }
 .loggedin{
   background:$color-dark-blue;
@@ -311,7 +309,7 @@ a.button,
 }
 
 .form_box{
-  margin:20px auto;
+  margin:20px auto 100px;
   width:390px;
   h1{margin:30px auto;}
   form{
