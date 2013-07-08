@@ -1,10 +1,12 @@
 //lesson show page
 
 .lesson_wrapper {
-  height:400px;
   margin:40px;
   position:relative;
-  width:400px;
+  @media all and (max-width: 767px){
+    margin: 20px auto 0px;
+    width:200px;
+  }
   &:hover > .play_mark_large {
     cursor:pointer;
     opacity:0.8;

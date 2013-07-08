@@ -190,6 +190,9 @@ a.button,
   background: $color-light-blue;
   margin:40px 0px 0px;
   padding: 20px 0 0 0;
+  @media all and (max-width: 767px){
+    margin:0px;
+  }
   h2{
     padding:10px;
   }
