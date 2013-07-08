@@ -1,23 +1,24 @@
-<div class="hamburger">
-  {{#view App.ShowNav}}
-    <div id="hamburger_icon" class="nav_closed">&nbsp;</div>
-  {{/view}}
-</div>
-<div class="the_top_nav clearfix">
-  {{#view App.HideNav}}
-    <div class="nav_close_button">x</div>
-  {{/view}}
-  <div class="top_nav_left">
-    <div class="top_nav clearfix">{{#linkTo "home"}}              home{{/linkTo}}</div>
-    <div class="top_nav clearfix">{{#linkTo "biblebooks.index"}}  bible books{{/linkTo}}</div>
-    <div class="top_nav clearfix">{{#linkTo "lessons.index"}}     all teachings{{/linkTo}}</div>
+<div class="hide_show_nav">
+  <div class="hamburger">
+    {{#view App.ShowNav}}
+      <div id="hamburger_icon" class="nav_closed">&nbsp;</div>
+    {{/view}}
   </div>
-  <div class="top_nav_right">
-    <div class="calvary_link"><a href="http://www.calvary.com">Calvary.com</a></div>
-    <div class="nate_button">{{#linkTo "books.index"}}Nate Holdridge{{/linkTo}}</div>
+  <div class="the_top_nav clearfix">
+    {{#view App.HideNav}}
+      <div class="nav_close_button">x</div>
+    {{/view}}
+    <div class="top_nav_left">
+      <div class="top_nav clearfix">{{#linkTo "home"}}              home{{/linkTo}}</div>
+      <div class="top_nav clearfix">{{#linkTo "biblebooks.index"}}  bible books{{/linkTo}}</div>
+      <div class="top_nav clearfix">{{#linkTo "lessons.index"}}     all teachings{{/linkTo}}</div>
+    </div>
+    <div class="top_nav_right">
+      <div class="calvary_link"><a href="http://www.calvary.com">Calvary.com</a></div>
+      <div class="nate_button">{{#linkTo "books.index"}}Nate Holdridge{{/linkTo}}</div>
+    </div>
   </div>
 </div>
-
 <div class="container background_grad_one clearfix">
   {{outlet}}
 </div>

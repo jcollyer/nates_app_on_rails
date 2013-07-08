@@ -354,8 +354,10 @@ a.button,
   width:250px;
 }
 
-.hamburger{
+.hide_show_nav{
   background:#222;
+}
+.hamburger{
   height:40px;
   width:100%;
   #hamburger_icon{
@@ -371,7 +373,6 @@ a.button,
   }
 }
 .the_top_nav{
-  background:#222;
   margin-top:-140px;
   position:absolute;
   width: 100%;

@@ -32,6 +32,7 @@ App.EditBiblebook = Ember.View.extend({
 
 App.ShowNav = Ember.View.extend({
   click: function() {
+    $(".hide_show_nav").animate({height: "100px"}, 500);
     $(".hamburger").css("display", "none");
     $(".the_top_nav").css("position", "relative");
     $(".the_top_nav").animate({marginTop: "0px" }, 500);
@@ -40,6 +41,7 @@ App.ShowNav = Ember.View.extend({
 
 App.HideNav = Ember.View.extend({
   click: function() {
+    $(".hide_show_nav").animate({height: "40px"}, 100);
     $(".the_top_nav").css("margin-top", "-140px");
     $(".the_top_nav").css("position", "absolute");
     $(".hamburger").css("display", "block");
