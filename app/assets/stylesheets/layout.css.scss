@@ -358,15 +358,32 @@ a.button,
   background:#222;
 }
 .hamburger{
-  height:40px;
+  height:33px;
   width:100%;
   #hamburger_icon{
-    background: url("icon-hamburger.png") no-repeat;
     float:left;
     height: 20px;
     margin:7px 3px 0px 10px;
     padding-right:6%;
+    padding-top:3px;
+    position:relative;
     width:26px;
+    .hamburger_piece{
+      position:absolute;
+      background:#fff;
+      height:3px;
+      left:0px;
+      width: 26px;
+    }
+    .hamburger_top{
+      top:0px;
+    }
+    .hamburger_middle{
+      top:7px;
+    }
+    .hamburger_bottom{
+      top:14px;
+    }
     &:hover{
       cursor: pointer;
     }
@@ -444,8 +461,7 @@ a.button,
     }
   }
   .top_nav{
-    border-left: 1px solid $color-blue;
-    margin:3px 5%;
+    margin:7px 24px 0px;
     position:relative;
     @media all and (max-width: 767px){
       background: $color-blue;
@@ -455,9 +471,12 @@ a.button,
     a{
       color:#eee;
       display: block;
-      line-height: 1.7em;
+      line-height: 1.4em;
       padding-left:10px;
       transition: all 0.5s ease;
+      @media all and (max-width: 767px){
+        line-height: 1.9em;
+      }
       &:hover{
         background:$color-dark-blue2;
         transition: all 0.2s ease;

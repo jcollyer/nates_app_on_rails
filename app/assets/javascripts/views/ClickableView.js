@@ -32,18 +32,24 @@ App.EditBiblebook = Ember.View.extend({
 
 App.ShowNav = Ember.View.extend({
   click: function() {
-    $(".hide_show_nav").animate({height: "100px"}, 500);
-    $(".hamburger").css("display", "none");
+    $(".hide_show_nav").animate({height: "100px"}, 300);
+    $(".hamburger").css("position", "absolute");
     $(".the_top_nav").css("position", "relative");
-    $(".the_top_nav").animate({marginTop: "0px" }, 500);
+    $(".the_top_nav").animate({marginTop: "0px" }, 300);
+    $(".hamburger_piece").animate({width: "4px", left: "10px", height: "26px"}, 200);
+    $(".hamburger_middle").animate({top: "30px"}, 300);
+    $(".hamburger_bottom").animate({top: "60px"}, 300);
     }
 });
 
 App.HideNav = Ember.View.extend({
   click: function() {
-    $(".hide_show_nav").animate({height: "40px"}, 100);
+    $(".hide_show_nav").animate({height: "33px"}, 700);
     $(".the_top_nav").css("margin-top", "-140px");
     $(".the_top_nav").css("position", "absolute");
-    $(".hamburger").css("display", "block");
+    $(".hamburger").css("position", "relative");
+    $(".hamburger_piece").animate({width: "26px", left: "0px", height: "3px"}, 300);
+    $(".hamburger_middle").animate({top: "7px"}, 200);
+    $(".hamburger_bottom").animate({top: "14px"}, 200);
     }
 });
