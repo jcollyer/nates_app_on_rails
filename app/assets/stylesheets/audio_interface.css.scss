@@ -6,6 +6,7 @@
 .paused.play_mark_large {
   border: 3px solid #fff;
   border-radius:75px;
+  cursor:pointer;
   height:150px;
   left:50%;
   margin:-75px 0 0 -75px;
@@ -13,7 +14,6 @@
   position:absolute;
   top:50%;
   width:150px;
-
   &:before {
     border-left: 100px solid #fff;
     border-top: 50px solid transparent;
@@ -30,6 +30,7 @@
 .play_mark_medium {
   border: 2px solid #fff;
   border-radius:75px;
+  cursor: pointer;
   height:50px;
   left:50%;
   margin:-15px 0 0 -40px;
@@ -40,7 +41,6 @@
   z-index:9;
   &:hover{
     background:#fff;
-    cursor: pointer;
     &:before {
       border-left: 30px solid rgba(0,0,0,0.8);
       border-top: 15px solid transparent;
@@ -53,7 +53,6 @@
       width: 0;
     }
   }
-
   &:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
@@ -70,6 +69,7 @@
 .pause_mark_medium {
   border: 2px solid #fff;
   border-radius:35px;
+  cursor: pointer;
   height:50px;
   left:50%;
   margin:-25px 0 0 -25px;
@@ -77,7 +77,6 @@
   position:absolute;
   top:50%;
   width:50px;
-
   &:after {
     border-radius:3px;
     content:"";
@@ -88,7 +87,6 @@
     width: 7px;
     background:white;
   }
-
   &:before {
     border-radius:3px;
     content:"";
@@ -104,6 +102,7 @@
 .play_mark_small {
   border: 2px solid #fff;
   border-radius:35px;
+  cursor: pointer;
   height:50px;
   left:50%;
   margin:-25px 0 0 -25px;
@@ -112,7 +111,6 @@
   top:50%;
   width:50px;
   z-index:9;
-
   &:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
@@ -129,6 +127,7 @@
 .play_mark_small2 {
   border: 2px solid #fff;
   border-radius:35px;
+  cursor: pointer;
   height:50px;
   right:7%;
   margin:-25px 0 0 -25px;
@@ -137,7 +136,6 @@
   top:40px;
   width:50px;
   z-index:9;
-  &:hover{cursor:pointer;}
   &:before {
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
@@ -154,6 +152,7 @@
 .play_mark_list {
   border: 2px solid #fff;
   border-radius:35px;
+  cursor:pointer;
   float:left;
   height:50px;
   margin:4px 0 0 9px;
@@ -163,7 +162,6 @@
   width:50px;
   z-index:9;
   &:hover{
-    cursor:pointer;
     opacity:1;
   }
   &:before {
@@ -182,6 +180,7 @@
 .pause_mark_small {
   border: 2px solid #fff;
   border-radius:35px;
+  cursor:pointer;
   height:50px;
   left:50%;
   margin:-25px 0 0 -25px;
@@ -189,7 +188,6 @@
   position:absolute;
   top:50%;
   width:50px;
-
   &:after {
     border-radius:3px;
     content:"";
@@ -200,7 +198,6 @@
     width: 7px;
     background:white;
   }
-
   &:before {
     border-radius:3px;
     content:"";
