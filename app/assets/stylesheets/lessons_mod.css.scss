@@ -173,9 +173,10 @@
     margin-left:105px;
   }
   .lesson_mod_info{
-    padding: 20px 10px;
+    padding: 20px 10px 5px;
     text-align: right;
     @media all and (max-width: 767px){
+      background: #fff;
       text-align: left;
     }
   }
@@ -185,6 +186,9 @@
   font-size: 150%;
   margin:0px 0 5px 0;
   text-transform: uppercase;
+  @media all and (max-width: 767px){
+    color: #222;
+  }
 }
 .lesson_mod_info h2 {
   color: #ccc;
@@ -205,7 +209,7 @@
   padding:10px 0 0 0;
   width:162px;
   @media all and (max-width: 767px){
-    float:left;
+    display:none;
   }
   .social_icon{
     float:left;
