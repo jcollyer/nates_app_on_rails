@@ -416,10 +416,10 @@ a.button,
       border-top:none;
       border-right:none;
       top:0px;
-      height:29px;
+      height:25px;
       right:0px;
-      padding:6px 11px;
-      width:28px;
+      padding:6px 8px;
+      width:24px;
     }
     &:hover{
       background:#fff;
@@ -456,6 +456,9 @@ a.button,
           color:#fff;
           padding:10px 15px;
           transition: background 0.5s ease;
+          @media all and (max-width: 767px){
+            padding:8px 5px;
+          }
           &:hover{
             background:#fff;
             color:#222;
@@ -498,7 +501,7 @@ a.button,
       margin:17px 0 10px 0px;
       text-align: left;
       @media all and (max-width: 767px){
-        margin:7px 53px 10px 0px;
+        margin:7px 60px 10px 0px;
         text-align: center;
       }
       a{
