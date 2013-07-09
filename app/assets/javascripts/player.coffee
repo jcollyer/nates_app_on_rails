@@ -2,6 +2,8 @@ $ ->
   $(document).on "click", ".play_button",  ->
     audioPlayer = $("#lesson_mod_menu")
     $(".container").css "margin-bottom", "100px"
+    if $(window).width() < 768
+      $(".container").css "margin-bottom", "200px"
     audioPlayer.fadeIn()
     $button = $(this)
     thisParent = $button.parent()
@@ -52,6 +54,8 @@ $ ->
   $(document).on "click", ".play_this_teaching", ->
     audioPlayer = $("#lesson_mod_menu")
     $(".container").css "margin-bottom", "100px"
+    if $(window).width() < 768
+      $(".container").css "margin-bottom", "200px"
     audioPlayer.fadeIn()
     $button = $(this)
     mediaPath =  $button.data("mp3")
