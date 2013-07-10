@@ -143,11 +143,20 @@ a.button,
   z-index: 9;
 }
 
-.family_image{
+.circle_image{
   background: rgba(255,255,255,0.6);
   border-radius: 110%;
   border:1px solid rgba(100,100,100,0.4);
   float:right;
+}
+
+.nate_image{
+  max-width:115px;
+  @media all and (max-width: 767px) {
+    position:absolute;
+    right:0px;
+    top:0px;
+  }
 }
 
 .box{
@@ -211,19 +220,19 @@ a.button,
     li:nth-child(odd){
       background: $color-light-blue2;
        &:hover {
-        background: $color-dark-blue;
+        background: $color-blue;
       }
     }
     li{
       border-top:1px solid $color-dark-blue;
       color: #fff;
+      &:hover {
+        background: $color-blue;
+      }
       a{
+        color:#fff;
         display:block;
         padding: 20px;
-        &:hover {
-          background: $color-dark-blue;
-          color: #fff;
-        }
       }
     }
   }
@@ -304,7 +313,8 @@ a.button,
 
   .home_image{
     float:left;
-    width:12%
+    position:relative;
+    width:19%
   }
 }
 

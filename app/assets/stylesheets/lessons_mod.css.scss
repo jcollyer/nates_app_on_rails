@@ -188,6 +188,8 @@
   text-transform: uppercase;
   @media all and (max-width: 767px){
     color: #222;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #000;
   }
 }
 .lesson_mod_info h2 {
