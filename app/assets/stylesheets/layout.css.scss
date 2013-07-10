@@ -24,6 +24,14 @@ body{
   font-size: 110%;
 }
 
+#loader{
+  display:none;
+  left:45%;
+  position:fixed;
+  top:200px;
+  z-index: 99;
+}
+
 .row {
   width:100%;
   margin:0px auto;
@@ -106,7 +114,7 @@ a.button,
 .button {
   background: none;
   border: 1px solid #eee;
-  color:#eee;
+  color:#fff;
   font-size: 70%;
   padding:15px;
   transition: all 0.5s ease;
@@ -220,7 +228,19 @@ a.button,
     }
   }
 }
-
+.back_to_biblebooks{
+  margin:40px auto;
+  width:210px;
+  @media all and (max-width: 767px){
+    margin:20px auto 30px;
+    width:310px;
+  }
+  a{
+    @media all and (max-width: 767px){
+      padding:20px 90px;
+    }
+  }
+}
 .grid_box_holder{
   background: blue;
   max-width: 1200px;
