@@ -11,7 +11,7 @@ $ ->
     titlePath = $button.find(".play_this_lesson_title").text()
     refurlPath = $button.find(".play_this_lesson_refurl").text()
     imagePath = thisParent.find(".play_this_lesson_image").attr('src')
-    console.log refurlPath
+    # console.log refurlPath
     $(".lesson_mod_info").empty()
     $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
     $(".mod_img").attr("src", imagePath)
@@ -62,8 +62,8 @@ $ ->
     titlePath = $button.data("title")
     refurlPath = $button.data("refurl")
     imagePath = $button.data("image")
-    console.log refurlPath
-    console.log imagePath
+    # console.log refurlPath
+    # console.log imagePath
     $(".lesson_mod_info").empty()
     $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
     $(".mod_img").attr("src", imagePath)
@@ -94,4 +94,5 @@ $ ->
       player.jPlayer "play"
       $button.data "state", "playing"
       $button.removeClass "paused"
+
 
