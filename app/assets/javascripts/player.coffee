@@ -52,6 +52,11 @@ $ ->
 
 $ ->
   $(document).on "click", ".play_this_teaching", ->
+    $(".spin").css "-webkit-animation", "spin 5s infinite"
+    $(".spin").css "-moz-animation",    "spin 5s infinite"
+    $(".spin").css "-o-animation",      "spin 5s infinite"
+    $(".spin").css "animation",         "spin 5s infinite"
+    $("#loader").fadeIn()
     audioPlayer = $("#lesson_mod_menu")
     $(".container").css "margin-bottom", "100px"
     if $(window).width() < 768
@@ -75,11 +80,16 @@ $ ->
       swfPath: "http://jplayer.org/latest/js"
       supplied: "mp3, oga"
       ready: ->
+        player.bind $.jPlayer.event.canplay, ->
+          console.log "ready"
+          $(".spin").css "-webkit-animation", "none"
+          $(".spin").css "-moz-animation", "none"
+          $(".spin").css "-ms-animation", "none"
+          $(".spin").css "animation", "none"
+          $("#loader").fadeOut()
         player.bind $.jPlayer.event.play, ->
-        # console.log "play event"
           $button.removeClass "paused"
         player.bind $.jPlayer.event.pause, ->
-        # console.log "pause event"
           $button.addClass "paused"
 
     if $button.data("state") == "playing"
