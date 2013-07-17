@@ -603,22 +603,23 @@ a.button,
   display: none;
   border-radius:4px;
   background: rgba(0,0,0,0.8);
-  left:45%;
+  left:40%;
   position:fixed;
   padding:20px;
   top:200px;
   z-index: 99;
+  @media all and (max-width: 767px){
+    left: 34%;
+  }
+  @media all and (max-width: 525px){
+    left: 23%;
+  }
   .spin {
     height: 70px;
     width: 70px;
     margin-left:43px;
     border-radius: 50%;
     border:dashed 2px white;
-    -webkit-animation: spin 5s infinite;
-    -moz-animation:    spin 5s infinite;
-    -o-animation:      spin 5s infinite;
-    animation:         spin 5s infinite;
-
   }
 }
 @-webkit-keyframes spin {
