@@ -6,7 +6,6 @@ App.CurrentUserController = Ember.ObjectController.extend
       con
     else
       con == null
-      alert(33)
       console.log con
   ).property('@content')
 

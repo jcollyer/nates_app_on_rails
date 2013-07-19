@@ -30,6 +30,15 @@ App.EditBiblebook = Ember.View.extend({
   }
 });
 
+App.LessonRemove = Ember.View.extend({
+  tagName: 'tr',
+  lesson: null,
+  removeItem: function() {
+      var lesson = this.get('lesson');
+      App.peopleController.removeObject(lesson);
+  }
+});
+
 App.ShowNav = Ember.View.extend({
   click: function() {
     $(".hide_show_nav").animate({height: "100px"}, 300);
