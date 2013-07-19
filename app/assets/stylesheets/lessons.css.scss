@@ -1,3 +1,9 @@
+$color-blue:#0ca7d3;
+$color-dark-blue:#025e79;
+$color-dark-blue2:#037394;
+$color-light-blue:#058db4;
+$color-light-blue2:#0197c2;
+
 #lessons{
   padding:10px;
 }
@@ -37,8 +43,15 @@
     padding:8px 5px 5px 5px;
   }
   h3{
+    background: $color-dark-blue;
     color:#eee;
-    margin:1px 0 0 0;
+    font-size: 17px;
+    margin:-5px 0 0 0;
+    padding:3px;
+
+    @media all and (max-width: 480px){
+      font-size: 13px;
+    }
   }
 
   .lessons_summary {
@@ -56,5 +69,8 @@
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    @media all and (max-width: 480px){
+      display:none;
+    }
   }
 }
