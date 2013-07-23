@@ -1,11 +1,6 @@
-# App.LessonsIndexController = Em.ArrayController.extend
-#   delete: ->
-#     lesson = this.get('content')
-#     alert lesson
-#     lesson.deleteRecord()
-#     this.get('store').commit()
-
-#     alert "deleted"
-
-#   edit: ->
-#     this.transitionToRoute("lessons.edit", this)
+App.LessonsIndexController = Em.ArrayController.extend
+  destroy: ->
+    console.log @content
+    @content.deleteRecord()
+    @store.commit()
+    @transitionToRoute 'lessons.index'

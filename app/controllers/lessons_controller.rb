@@ -1,4 +1,8 @@
 class LessonsController < ApplicationController
+  def index
+    @lessons = Lesson.find(:all)
+  end
+
   def new
 		@lesson = Lesson.new
 

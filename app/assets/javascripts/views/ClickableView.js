@@ -1,3 +1,19 @@
+// App.EditLessons = Ember.View.extend({
+//   click: function() {
+    // var button = this;
+    // var con = this.get('_parentView.contentIndex');
+    // var con = this.get('elementId');
+    // var buttonParent = button.find("span");
+    // var thisID = button.find(".edit_this_button");
+    // var theID = editID.text();
+    // console.log(button);
+    // console.log(con);
+    // console.log(thisID);
+    // alert(theID);
+    // window.location = "/lessons/"+theID+"/edit"
+//   }
+// });
+
 App.EditLesson = Ember.View.extend({
   click: function() {
     var theID = $('#edit_button_id').text();

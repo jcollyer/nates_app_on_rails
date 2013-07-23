@@ -1,0 +1,14 @@
+<div class="container">
+    <table>
+      <tr>
+        <th>Title</th><th>Edit</th><th>Delete</td>
+      </tr>
+      <% @lessons.each do |lesson| %>
+        <tr>
+          <td><%= lesson.title %></td>
+          <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
+          <td><%= link_to 'Delete', lesson, method: :delete, data: { confirm: 'are you sure?'}%></td>
+        </tr>
+      <% end %>
+    </table>
+</div>

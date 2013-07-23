@@ -21,7 +21,7 @@ App::Application.routes.draw do
     resources :biblebooks, :except => [:new, :edit]
   end
 
-  resources :lessons, :only => [:new, :edit, :show]
+  resources :lessons, :only => [:new, :edit, :show, :index]
   resources :posts, :only => [:new, :edit]
   resources :books, :only => [:new, :edit]
   resources :biblebooks, :only => [:new, :edit, :show]

@@ -1,4 +1,4 @@
-<div class="small-6 large-3 columns lessons_list">
+<div class="small-6 large-3 columns lessons_list" alt="this">
   <div class="play_mark_medium play_button paused">
     <div class="play_this_lesson_mp3">{{mp3}}</div>
     <div class="play_this_lesson_title" style="display:none">{{title}}</div>
@@ -14,8 +14,16 @@
     {{! <h3>{{date}} {{! </h3> }}
   {{/linkTo}}
   <h3>{{title}}</h3>
-{{! <a href='#' {{action 'edit'}} {{!  class="button">Edit</a> }}
-{{! <a href='#' {{action delete}} {{! class="button">Delete</a> }}
+{{!    <a href='#' {{action 'destroy'}} {{! class="button">Delete</a>
+   <div class="edit_this_lesson">
+     {{#view App.EditLessons}}
+       {{! <span class="button">
+        Edit
+        <span class="edit_this_button">{{id}} {{! </span>
+       </span>
+
+     {{/view}}
+   {{! </div>  }}
 
 
 
