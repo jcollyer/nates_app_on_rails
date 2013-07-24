@@ -60,10 +60,30 @@
           </a>
         </div>
         <div class="social_icon social_twitter">
-          &nbsp;
+          <a class="twitter popup" href="http://twitter.com/share?text=Tweet%20about%20Nate's%20teachings."></a>
+
+          <script>
+            $('.popup').click(function(event) {
+              var width  = 575,
+                  height = 400,
+                  left   = 0,
+                  top    = 0,
+                  url    = this.href,
+                  opts   = 'status=1' +
+                           ',width='  + width  +
+                           ',height=' + height +
+                           ',top='    + top    +
+                           ',left='   + left;
+
+              window.open(url, 'twitter', opts);
+
+              return false;
+            });
+          </script>
         </div>
         <div class="social_icon social_google">
-          <a href="https://plus.google.com/share?url=nateholdridge.com" target="_blank">
+          <a href="https://plus.google.com/share?url={nateholdridge.com}" onclick="javascript:window.open(this.href,
+            '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
             &nbsp;
           </a>
         </div>
