@@ -50,14 +50,20 @@
 
       <div class="social_buttons">
         <div class="social_icon social_facebook">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">&nbsp;
+          <a href="#"
+            onclick="
+              window.open(
+                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                'facebook-share-dialog',
+                'width=626,height=436');
+              return false;">
           </a>
         </div>
         <div class="social_icon social_twitter">
           &nbsp;
         </div>
         <div class="social_icon social_google">
-          <a href="https://plus.google.com/share?url=ADD_YOUR_URL" >
+          <a href="https://plus.google.com/share?url=nateholdridge.com" target="_blank">
             &nbsp;
           </a>
         </div>
