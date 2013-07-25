@@ -278,31 +278,38 @@
     }
     a{
       background: url('icon-download.png') no-repeat;
+      background-position:right;
+      color:#fff;
       cursor:pointer;
       display:block;
       float:right;
+      font-size: 12px;
       height:20px;
-      margin:70px -17px 0 0px;
+      margin:10px 9px 0 0px;
       opacity:0.7;
-      width:20px;
+      padding:8px 22px 0 0;
       &:hover{
         opacity:1;
       }
     }
   }
   .player_refurl_button{
+    width:100%;
     @media all and (max-width: 767px){
       display:none;
     }
     a{
       background: url('icon-refurl.png') no-repeat;
+      background-position:right;
+      color:#fff;
       cursor:pointer;
       display:block;
       float:right;
+      font-size: 12px;
       height:20px;
       margin:40px -20px 0 0px;
       opacity:0.7;
-      width:20px;
+      padding:8px 22px 0 0;
       &:hover{
         opacity:1;
       }
