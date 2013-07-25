@@ -13,13 +13,7 @@ $color-light-blue2:#0197c2;
   .play_this_lesson_image{
     width:100%;
   }
-  a:hover > .lessons_summary {
-    opacity:1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
+
   &:hover > .play_mark_medium {
     opacity:0.6;
     -webkit-transition: all 0.2s ease-in-out;
@@ -43,12 +37,12 @@ $color-light-blue2:#0197c2;
     padding:8px 5px 5px 5px;
   }
   h3{
-    background: $color-dark-blue;
-    color:#eee;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
     font-size: 17px;
-    margin:-5px 0 0 0;
-    padding:3px;
-
+    margin:-40px 0 0 0px;
+    padding: 9px;
+    position:relative;
     @media all and (max-width: 480px){
       font-size: 13px;
     }
