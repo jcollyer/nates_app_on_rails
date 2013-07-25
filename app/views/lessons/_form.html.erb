@@ -1,23 +1,24 @@
 <div>
-  <%= form.label :title %>
+  <label>Bible book</label>
+  <div class="collection"><%= form.collection_select(:biblebook_id, Biblebook.all, :id, :name) %></div>
+</div>
+<div class="lesson_ref">
+  <%= form.label "Reference" %>
   <%= form.text_field :title %>
 </div>
+<div class="ref details"><span class="italic">e.g.</span> 4  <span class="italic">or</span>  1 : 6 - 31</div>
 <div>
   <%= form.label :refurl %>
   <%= form.text_field :refurl %>
-</div>
-<div>
-  <label>Bible book</label>
-  <div class="collection"><%= form.collection_select(:biblebook_id, Biblebook.all, :id, :name) %></div>
 </div>
 <!-- <div> -->
   <%# form.label :summary %>
   <%# form.text_field :summary %>
 <!-- </div> -->
-<!-- <div> -->
-  <%# form.label :image %>
-  <%# form.file_field :image, :style => "margin-top:10px; line-height:2em; width:300px;" %>
-<!-- </div> -->
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image, :style => "margin-top:10px; line-height:2em; width:300px;" %>
+</div>
 <div>
   <%= form.label :mp3 %>
   <div class="collection"><%= form.file_field :mp3 %></div>
