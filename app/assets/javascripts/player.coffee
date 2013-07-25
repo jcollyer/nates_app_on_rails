@@ -8,6 +8,7 @@ $ ->
     $button = $(this)
     thisParent = $button.parent()
     mediaPath =  $button.find(".play_this_lesson_mp3").text()
+
     titlePath = $button.find(".play_this_lesson_title").text()
     refurlPath = $button.find(".play_this_lesson_refurl").text()
     imagePath = thisParent.find(".play_this_lesson_image").attr('src')
@@ -15,7 +16,7 @@ $ ->
     $("#player_download_url").attr("href", downloadMp3).attr("download", titlePath)
     # console.log refurlPath
     $(".lesson_mod_info").empty()
-    $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
+    $(".lesson_mod_info").prepend("<h1 class='teaching_title'> "+titlePath+" </h1> ")
     $(".mod_img").attr("src", imagePath)
     $(".player_download_url").attr("src")
     $(".player_download_url").attr("src", mediaPath)
@@ -66,6 +67,7 @@ $ ->
     audioPlayer.fadeIn()
     $button = $(this)
     mediaPath =  $button.data("mp3")
+    bibleBook = $("#teaching_biblebook").text()
     titlePath = $button.data("title")
     refurlPath = $button.data("refurl")
     imagePath = $(".book_image").attr("src")
@@ -74,7 +76,8 @@ $ ->
     # console.log refurlPath
     # console.log imagePath
     $(".lesson_mod_info").empty()
-    $(".lesson_mod_info").prepend("<h1> "+titlePath+" </h1>")
+    $(".lesson_mod_info").prepend("<h1 class='teaching_title'> "+bibleBook+" </h1>  <h1 class='teaching_title'> "+titlePath+" </h1> ")
+
     $(".mod_img").attr("src", imagePath)
     $(".player_download_url").attr("src")
     $(".player_download_url").attr("src", mediaPath)
