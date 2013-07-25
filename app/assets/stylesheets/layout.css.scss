@@ -216,7 +216,7 @@ a.button,
       }
     }
     li{
-      border-top:1px solid $color-dark-blue;
+      border-top:1px solid $color-blue;
       color: #fff;
       &:hover {
         background: $color-blue;
@@ -224,7 +224,7 @@ a.button,
       a{
         color:#fff;
         display:block;
-        padding: 20px;
+        font-size: 50px;
       }
     }
   }
@@ -279,7 +279,8 @@ a.button,
 }
 
 .play_this_teaching_title{
-  float:right;
+  float:left;
+  margin:0 0px 0 10px;
 }
 
 
