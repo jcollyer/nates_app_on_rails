@@ -134,6 +134,9 @@ a.button,
   position: absolute;
   top: -10px;
   width:80px;
+  @media all and (max-width: 767px) {
+    left:21%;
+  }
 }
 
 .image{
