@@ -17,6 +17,7 @@ class Api::LessonsController < ApplicationController
 			instance.biblebook_id = params[:lesson][:biblebook_id]
 			instance.title = params[:lesson][:title]
 			instance.summary = params[:lesson][:summary]
+			instance.position = params[:lesson][:position]
 			instance.image = params[:lesson][:image]
 			instance.refurl = params[:lesson][:refurl]
 			instance.mp3 = params[:lesson][:mp3]
@@ -30,6 +31,7 @@ class Api::LessonsController < ApplicationController
 	  lesson.biblebook_id = params[:lesson][:biblebook_id]
 		lesson.title = params[:lesson][:title]
 		lesson.summary = params[:lesson][:summary]
+		lesson.position = params[:lesson][:position]
 	  lesson.image = params[:lesson][:image] if params[:lesson][:image].present?
 	  lesson.mp3 = params[:lesson][:mp3] if params[:lesson][:mp3].present?
 		lesson.refurl = params[:lesson][:refurl]

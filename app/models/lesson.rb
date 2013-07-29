@@ -1,4 +1,6 @@
  class Lesson < ActiveRecord::Base
+  default_scope order('position ASC')
+  # lessons = Lesson.all.sort_by { |a| +(a.title.to_i) }
 
   belongs_to :biblebook
 	# Public: Cover art image for lesson.
