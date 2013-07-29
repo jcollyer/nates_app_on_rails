@@ -19,10 +19,21 @@ $color-light-blue2:#0197c2;
 }
 
 body{
-  background:$color-blue;
+  // background:$color-blue;
+  background:url(back.jpg) repeat-y;
+  background-size:100%;
   font-family:$font-body;
   font-size: 110%;
+
 }
+
+.container {
+  h1{
+    margin:20px auto;
+    text-align:center;
+  }
+}
+
 
 .row {
   width:100%;
@@ -56,22 +67,22 @@ body{
 }
 
 p{
-  color:#eee;
+  color:white;
   line-height: 1.5em;
   margin:5px 0px;
   padding:3px 0px;
 }
 
 h1{
-  font-weight:400;
   color:white;
+  font-weight:400;
   margin:5px;
 }
 
 h2{
+  color:white;
   font-weight:400;
   letter-spacing:-1px;
-  margin:5px;
 }
 
 h3{
@@ -207,7 +218,9 @@ a.button,
 }
 
 .biblebook_list {
-  background: $color-light-blue;
+  background: rgba(5, 141, 180, 0.3);
+  font-family: sans-serif;
+  font-weight: lighter;
   margin:40px 0px 0px;
   padding: 20px 0 0 0;
   @media all and (max-width: 767px){
@@ -221,7 +234,7 @@ a.button,
     margin:0px;
     padding:0px;
     li:nth-child(odd){
-      background: $color-light-blue2;
+      background: rgba(1, 151, 194, 0.3);
        &:hover {
         background: $color-blue;
       }
@@ -294,13 +307,6 @@ a.button,
   margin:0 0px 0 10px;
 }
 
-
-.container {
-  h1{
-    margin:20px auto;
-    text-align:center;
-  }
-}
 
 .home{
   .home_title{
@@ -392,7 +398,10 @@ a.button,
 }
 
 .hide_show_nav{
-  background:#222;
+  background: none;
+  @media all and (max-width: 767px){
+    background:rgba(0,0,0,0.6);
+  }
 }
 .hamburger{
   height:33px;
@@ -508,7 +517,8 @@ a.button,
     }
   }
   .top_nav{
-    margin:7px 24px 0px;
+    height:22px;
+    margin:8px 24px 0px;
     position:relative;
     @media all and (max-width: 767px){
       background: $color-blue;
@@ -518,14 +528,14 @@ a.button,
     a{
       color:#eee;
       display: block;
-      line-height: 1.4em;
+      line-height: 26px;
       padding-left:6px;
       transition: all 0.5s ease;
       @media all and (max-width: 767px){
         line-height: 1.9em;
       }
       &:hover{
-        background:$color-dark-blue2;
+        background: rgba(1, 151, 194, 0.3);
         transition: all 0.2s ease;
       }
       @media all and (max-width: 767px){
