@@ -2,6 +2,8 @@ class Api::LessonsController < ApplicationController
 
 	def index
 		lessons = Lesson.all
+		# lessons = Lesson.find(:all, :order => 'title.to_i DESC')
+		# lessons = Lesson.all.sort_by { |a| +(a.title.to_i) }
 		render :json => Api::LessonsPresenter.new(lessons)
 	end
 

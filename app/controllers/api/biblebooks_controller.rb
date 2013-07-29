@@ -2,6 +2,7 @@ class Api::BiblebooksController < ApplicationController
 
   def index
     biblebooks = Biblebook.all
+    # biblebooks = Biblebook.find(:all, :order => 'name DESC')
     render :json => Api::BiblebooksPresenter.new(biblebooks)
   end
 

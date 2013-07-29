@@ -19,6 +19,7 @@
 //= require moment
 //= require ./setup
 //= require ./player
+//= require ./custom
 //= require_tree ./models
 //= require_tree ./controllers
 //= require_tree ./views
