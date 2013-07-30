@@ -212,9 +212,11 @@ a.button,
 }
 
 .banner{
-  padding:15px;
+  background: rgba(0,0,0,0.7);
+  border-top:1px solid #333;
   color:#fff;
   line-height: 1.5em;
+  padding:15px;
 }
 
 .biblebook_list {
@@ -309,6 +311,8 @@ a.button,
 
 
 .home{
+  background:rgba(0,0,0,0.3);
+  border-top: 1px solid #333;
   .home_title{
     float:left;
     padding:20px;
@@ -323,6 +327,7 @@ a.button,
 
   .home_image{
     float:left;
+    margin-top:3px;
     position:relative;
     width:19%
   }
