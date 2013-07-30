@@ -88,7 +88,7 @@ $ ->
       supplied: "mp3, oga"
       ready: ->
         player.bind $.jPlayer.event.canplay, ->
-          console.log "ready"
+          # console.log "ready"
           $(".spin").css "-webkit-animation", "none"
           $(".spin").css "-moz-animation", "none"
           $(".spin").css "-ms-animation", "none"
