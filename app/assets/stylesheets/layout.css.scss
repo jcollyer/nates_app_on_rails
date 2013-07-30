@@ -523,6 +523,7 @@ a.button,
     @media all and (max-width: 767px){
       background: $color-blue;
       border-bottom: 1px solid $color-light-blue2;
+      height:auto;
       margin:0px;
     }
     a{
