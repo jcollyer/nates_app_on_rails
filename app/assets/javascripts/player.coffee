@@ -23,8 +23,13 @@ $ ->
     $(".player_refurl").attr("href")
     $(".player_refurl").attr("href", refurlPath)
     window.player = $("#jquery_jplayer_1").jPlayer
-      swfPath: "http://jplayer.org/latest/js"
-      supplied: "mp3, oga"
+      swfPath: "http://www.jplayer.org/latest/js/Jplayer.swf"
+      supplied: "mp3"
+      solution: "html, flash"
+      volume: 0.8
+      wmode: "window"
+      errorAlerts: false
+      warningAlerts: false
       ready: ->
         player.bind $.jPlayer.event.play, ->
         # console.log "play event"
@@ -89,6 +94,10 @@ $ ->
       swfPath: "http://www.jplayer.org/latest/js/Jplayer.swf"
       supplied: "mp3"
       solution: "html, flash"
+      volume: 0.8
+      wmode: "window"
+      errorAlerts: false
+      warningAlerts: false
       ready: ->
         player.bind $.jPlayer.event.canplay, ->
           # console.log "ready"

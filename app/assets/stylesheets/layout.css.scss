@@ -306,7 +306,7 @@ a.button,
 
 .play_this_teaching_title{
   float:left;
-  margin:0 0px 0 10px;
+  margin:6px 0px 0 10px;
 }
 
 
@@ -348,11 +348,12 @@ a.button,
   z-index: 99;
 }
 .loggedin{
-  background:$color-dark-blue;
+  background:#222;
+  border-bottom: 1px solid #333;
   padding:10px 25px;
   p{
     float:left;
-    margin:10px 0 0 0px;
+    margin:5px 0 0 0px;
   }
 }
 
@@ -611,11 +612,12 @@ a.button,
     left: 23%;
   }
   .spin {
-    height: 70px;
-    width: 70px;
-    margin-left:43px;
+    border: 2px dashed white;
     border-radius: 50%;
-    border:dashed 2px white;
+    height: 70px;
+    margin-left:43px;
+    position: relative;
+    width: 70px;
   }
 }
 @-webkit-keyframes spin {
