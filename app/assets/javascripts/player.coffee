@@ -41,6 +41,7 @@ $ ->
     # console.log "clicked play"
       player.jPlayer "setMedia", {
         mp3: mediaPath
+        oga: mediaPath
       }
       player.jPlayer "play"
       $button.data "state", "playing"
@@ -61,6 +62,7 @@ $ ->
     $(".spin").css "animation",         "spin 5s infinite"
     $("#loader").fadeIn()
     audioPlayer = $("#lesson_mod_menu")
+    # audioDiv = $("#jquery_jplayer_1")
     $(".container").css "margin-bottom", "100px"
     if $(window).width() < 768
       $(".container").css "margin-bottom", "170px"
@@ -84,7 +86,8 @@ $ ->
     $(".player_refurl").attr("href")
     $(".player_refurl").attr("href", refurlPath)
     window.player = $("#jquery_jplayer_1").jPlayer
-      swfPath: "http://jplayer.org/latest/js"
+      swfPath: "lib/Jplayer.swf"
+      solution: "html, flash"
       supplied: "mp3, oga"
       ready: ->
         player.bind $.jPlayer.event.canplay, ->
@@ -107,9 +110,15 @@ $ ->
     # console.log "clicked play"
       player.jPlayer "setMedia", {
         mp3: mediaPath
+        oga: mediaPath
       }
+      # console.log mediaPath
       player.jPlayer "play"
       $button.data "state", "playing"
       $button.removeClass "paused"
+    # trackSpeed = audioDiv.playbackRate = 2
+    # console.log audioDiv
+    # console.log trackSpeed
+
 
 
