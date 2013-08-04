@@ -90,7 +90,9 @@
   .lesson_current_time {
     color: #ccc;
     cursor: auto;
-    font-size: 80%;
+    font-family: 'arial';
+    font-size: 70%;
+    font-weight: lighter;
     height: 20px;
     padding: 3px;
     position: absolute;
@@ -117,7 +119,9 @@
 .lesson_duration {
   color: #ccc;
   float: right;
-  font-size: 80%;
+  font-family: 'arial';
+  font-size: 70%;
+  font-weight: lighter;
   margin: 0 6px 0 0;
   padding: 3px;
   text-align: right;
@@ -149,6 +153,7 @@
 .volume-meter {
   border: 1px solid #999;
   border-radius: 20px;
+  cursor: pointer;
   display: block;
   float: left;
   height: 20px;
@@ -156,19 +161,15 @@
   width: 60%;
 }
 .volume-bar {
-  -webkit-animation: volumecontrol 8s infinite ease-in-out;
-  -moz-animation: volumecontrol 8s infinite ease-in-out;
-  animation: volumecontrol 8s infinite ease-in-out;
   height: 18px;
   display: block;
   border-radius: 20px;
   background: #999;
+  margin-left:-1px;
 }
-.volume-bar:hover {
-  cursor: ew-resize;
-}
+
 .lesson_mod_volume_max {
-  background: url('icon_volume_max.png') no-repeat;
+  // background: url('icon_volume_max.png') no-repeat;
   float: left;
   width: 40px;
 }
@@ -334,4 +335,10 @@
   }
 }
 
+.color-ccc{
+  color: #ccc;
+}
+.icon-medium-size{
+  font-size: 27px;
+}
 
