@@ -198,7 +198,7 @@
     position: absolute;
     width:57%;
   }
-  .speed-15, .speed-16, .speed-17, .speed-18, .speed-19, .speed-20 {
+  .speed-10, .speed-13, .speed-15, .speed-17, .speed-20 {
     background: #444;
     border-bottom: 1px solid #666;
     border-left: 1px solid #666;
@@ -210,13 +210,14 @@
     font-size: 66%;
     height: 22px;
     padding: 4px 0 0 3px;
-    width:16%;
+    text-align: center;
+    width:19%;
     @media all and (max-width: 885px) and (min-width: 767px) {
       font-size: 40%;
       padding: 6px 0 0 4px;
     }
   }
-  .speed-15 {
+  .speed-10 {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -224,6 +225,9 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border-right: 1px solid #666;
+  }
+  .activeSpeed{
+    background:#999;
   }
 }
 

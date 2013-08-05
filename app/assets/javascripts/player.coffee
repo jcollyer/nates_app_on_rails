@@ -126,24 +126,25 @@ $ ->
       $button.removeClass "paused"
 
 
+  $(document).on "click", ".speed", ->
+    $(".speed").removeClass("activeSpeed")
+    $(this).addClass("activeSpeed")
+
   $(document).on "click", ".speed-20", ->
     audioDiv = document.getElementById("jp_audio_0")
     trackSpeed = audioDiv.playbackRate = 2
-  $(document).on "click", ".speed-19", ->
-    audioDiv = document.getElementById("jp_audio_0")
-    trackSpeed = audioDiv.playbackRate = 1.9
-  $(document).on "click", ".speed-18", ->
-    audioDiv = document.getElementById("jp_audio_0")
-    trackSpeed = audioDiv.playbackRate = 1.8
   $(document).on "click", ".speed-17", ->
     audioDiv = document.getElementById("jp_audio_0")
     trackSpeed = audioDiv.playbackRate = 1.7
-  $(document).on "click", ".speed-16", ->
-    audioDiv = document.getElementById("jp_audio_0")
-    trackSpeed = audioDiv.playbackRate = 1.6
   $(document).on "click", ".speed-15", ->
     audioDiv = document.getElementById("jp_audio_0")
     trackSpeed = audioDiv.playbackRate = 1.5
+  $(document).on "click", ".speed-13", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    trackSpeed = audioDiv.playbackRate = 1.3
+  $(document).on "click", ".speed-10", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    trackSpeed = audioDiv.playbackRate = 1.0
 
   # Keyboard Control Overides
   $(document.documentElement).keydown (event) ->
