@@ -66,8 +66,7 @@ $ ->
     $(".spin").css "-o-animation",      "spin 5s infinite"
     $(".spin").css "animation",         "spin 5s infinite"
     $("#loader").fadeIn()
-    audioPlayer = $("#lesson_mod_menu")
-    # audioDiv = $("#jquery_jplayer_1")
+    window.audioPlayer = $("#lesson_mod_menu")
     $(".container").css "margin-bottom", "100px"
     if $(window).width() < 768
       $(".container").css "margin-bottom", "170px"
@@ -125,17 +124,27 @@ $ ->
       player.jPlayer "play"
       $button.data "state", "playing"
       $button.removeClass "paused"
-    # trackSpeed = audioDiv.playbackRate = 2
-    # console.log audioDiv
-    # console.log trackSpeed
 
-# Keyboard Control Overides
-$(document.documentElement).keydown (event) ->
-  if event.which is 32
-    event.preventDefault()
-    if $("#jquery_jplayer_1").data("jPlayer").status.paused
-      $("#jquery_jplayer_1").jPlayer "play"
-    else
-      $("#jquery_jplayer_1").jPlayer "pause"
+
+  $(document).on "click", ".speed-2.0", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    trackSpeed = audioDiv.playbackRate = 2
+
+  $(document).on "click", ".speed-1.7", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    trackSpeed = audioDiv.playbackRate = 1.7
+
+  $(document).on "click", ".speed-1.5", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    trackSpeed = audioDiv.playbackRate = 1.5
+
+  # Keyboard Control Overides
+  $(document.documentElement).keydown (event) ->
+    if event.which is 32
+      event.preventDefault()
+      if $("#jquery_jplayer_1").data("jPlayer").status.paused
+        $("#jquery_jplayer_1").jPlayer "play"
+      else
+        $("#jquery_jplayer_1").jPlayer "pause"
 
 
