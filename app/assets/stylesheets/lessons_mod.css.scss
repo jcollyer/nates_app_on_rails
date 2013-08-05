@@ -139,16 +139,17 @@
 
 .lesson_mod_volume {
   display: block;
+  float: left;
   height: 30px;
-  padding: 0 0 0 12%;
-  width: 100%;
+  padding: 0 0 0 3%;
+  width: 50%;
   @media all and (max-width: 767px){
     display:none;
   }
 }
 .lesson_mod_volume_controls {
   float: left;
-  width: 27px;
+  width: 23px;
 }
 .volume-meter {
   border: 1px solid #999;
@@ -157,8 +158,11 @@
   display: block;
   float: left;
   height: 20px;
-  margin: 3px 3px 0px;
-  width: 60%;
+  margin: 3px 7px 0px 0px;
+  width: 52%;
+  @media all and (min-width: 1050px){
+    width: 65%;
+  }
 }
 .volume-bar {
   height: 18px;
@@ -185,6 +189,44 @@
   height: 26px;
   margin: 0px;
 }
+.play_speeds{
+  float: left;
+  width: 49%;
+  @media all and (max-width: 767px){
+    bottom: -100px;
+    left: 110px;
+    position: absolute;
+    width:57%;
+  }
+  .speed-15, .speed-16, .speed-17, .speed-18, .speed-19, .speed-20 {
+    background: #444;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-family: 'arial';
+    font-size: 66%;
+    height: 22px;
+    padding: 4px 0 0 3px;
+    width:16%;
+    @media all and (max-width: 885px) and (min-width: 767px) {
+      font-size: 40%;
+      padding: 6px 0 0 4px;
+    }
+  }
+  .speed-15 {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .speed-20 {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right: 1px solid #666;
+  }
+}
+
 .lesson_mod_info_container {
   float: left;
   width: 48%;
