@@ -34,15 +34,16 @@
     </div>
   </div>
   <div class="small-12 large-6 columns biblebook_list">
-     <h2 style="display:none;"><span id="teaching_biblebook" class="hh1">{{name}}</span></h2>
-     <ul class="biblebook_teaching_list">
-      {{#each lessons}}
-        <li class="clearfix">
-          {{link}}
-        </li>
-      {{/each}}
-
-     </ul>
+    <h2 style="display:none;"><span id="teaching_biblebook" class="hh1">{{name}}</span></h2>
+    <div id="jp_container_1" class="jp-playlist">
+      <ul class="biblebook_teaching_list">
+        {{#each lessons}}
+          <li class="clearfix">
+            {{link}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
   </div>
 
 

@@ -53,13 +53,12 @@ $ ->
       $button.removeClass "paused"
 
 
-$ ->
   $(document).on "click", ".player_close_button", ->
     $("#lesson_mod_menu").css "display", "none"
     player.jPlayer "pause"
     $(".container").css "margin-bottom", "0px"
 
-$ ->
+
   $(document).on "click", ".play_this_teaching", ->
     $(".spin").css "-webkit-animation", "spin 5s infinite"
     $(".spin").css "-moz-animation",    "spin 5s infinite"
@@ -125,6 +124,9 @@ $ ->
       $button.data "state", "playing"
       $button.removeClass "paused"
 
+    # myPlaylist = new jPlayerPlaylist
+    #   jPlayer: "#jp_audio_0"
+    #   cssSelectorAncestor: "#jp_container_1"
 
   $(document).on "click", ".speed", ->
     $(".speed").removeClass("activeSpeed")
