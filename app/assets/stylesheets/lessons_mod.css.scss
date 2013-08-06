@@ -27,6 +27,15 @@
   position: relative;
   width: 100px;
   z-index: 99;
+  &:after{
+    background: rgba(100,100,100,0.5);
+    content:'';
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 1px;
+  }
   @media all and (max-width: 767px){
     bottom:-100px;
     left:0px;
@@ -34,7 +43,6 @@
   }
   a{
     .current_lessen_image{
-      border-right: 1px solid #444;
       @media all and (max-width: 767px){
 
       }
@@ -109,6 +117,21 @@
       width: 24px;
     }
   }
+}
+
+.player_prev{
+  bottom: 40px;
+  left: 10px;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+.player_next{
+  bottom: 40px;
+  height: 20px;
+  right: 0px;
+  position: absolute;
+  width: 20px;
 }
 
 .lesson_mod_time {
@@ -381,6 +404,9 @@
   }
 }
 
+.color-fff{
+  color: #fff;
+}
 .color-ccc{
   color: #ccc;
 }
