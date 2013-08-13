@@ -64,6 +64,7 @@ body{
 .small_center{
   @media all and (max-width: 767px){
   margin: 0 auto;
+  width: 275px;
   }
 }
 
@@ -72,6 +73,9 @@ p{
   line-height: 1.5em;
   margin:5px 0px;
   padding:3px 0px;
+  @media all and (max-width: 767px){
+    margin:0px;
+  }
 }
 
 h1{
@@ -286,7 +290,7 @@ a.button,
       width:44%;
     }
     @media all and (max-width: 525px){
-      margin:10px 0px 20px;
+      margin:0px;
       width:100%;
     }
   }
@@ -294,14 +298,11 @@ a.button,
 
 .biblebook_image{
   margin:0 auto;
-  width:86%;
   .bb_image{
     border-bottom:1px solid rgba(255,255,254,0.3);
     border-right:1px solid rgba(255,255,254,0.3);
     width:100%;
-    @media all and (max-width: 525px){
-      width:100%;
-    }
+
   }
 }
 
