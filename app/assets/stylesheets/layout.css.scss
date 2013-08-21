@@ -246,7 +246,7 @@ a.button,
 }
 .back_to_biblebooks{
   margin:40px auto;
-  width:290px;
+  width:240px;
   a{display:block;}
   @media all and (max-width: 767px){
     margin:20px auto 30px;
@@ -297,9 +297,22 @@ a.button,
 
 
 .home{
-  background:$color-white-opaque;
+  // background:$color-white-opaque;
   border-top: 1px solid $color-black-opaque;
   border-bottom: 1px solid $color-dark-blue;
+
+
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(80%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 80%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+
+
+
   .home_title{
     float:left;
     padding:20px;
@@ -395,6 +408,17 @@ a.button,
 }
 
 .hide_show_nav{
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(29%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=1 ); /* IE6-9 */
+
+
+
+
   @media all and (max-width: 767px){
     background:rgba(0,0,0,0.6);
   }
@@ -483,7 +507,7 @@ a.button,
   }
   .top_nav{
     height:22px;
-    margin:8px 24px 0px;
+    margin:7.5px 24px 0px;
     position:relative;
     @media all and (max-width: 767px){
       background: $color-dark-blue;
@@ -675,8 +699,9 @@ a.button,
 //lesson show page
 
 .lesson_wrapper {
-  margin:40px;
+  margin:40px auto 0px;
   position:relative;
+  width: 390px;
   @media all and (max-width: 767px){
     margin: 20px auto 0px;
     width:310px;
