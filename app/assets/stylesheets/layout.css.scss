@@ -36,6 +36,9 @@ body{
     text-align:center;
     font-size: 330%;
     margin: 10px 0 0 0;
+    @media all and (max-width: 767px){
+      font-size: 100%;
+    }
   }
 }
 
@@ -101,6 +104,10 @@ h3{
 a{
   color:#444;
   text-decoration: none;
+}
+
+img {
+  display: block
 }
 
 .hh1{
@@ -269,6 +276,7 @@ a.button,
     p{
       padding:10px;
       text-align: center;
+      background: $color-white-opaque;
     }
     @media all and (max-width: 1000px){
       margin:20px 1% 20px 4%;
@@ -356,6 +364,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border-bottom: 1px solid #333;
   padding:10px 25px;
   p{
+    color: white;
     float:left;
     margin:5px 0 0 0px;
   }
@@ -408,20 +417,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .hide_show_nav{
-background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(29%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=1 ); /* IE6-9 */
-
-
-
-
-  @media all and (max-width: 767px){
-    background:rgba(0,0,0,0.6);
-  }
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(29%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.6) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=1 ); /* IE6-9 */
 }
 
 .the_top_nav{
@@ -454,7 +456,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     padding-right:35%;
     width:70%;
     @media all and (max-width: 767px){
-      width:35%;
+      width:38%;
       padding-right:0%;
     }
   }
@@ -462,7 +464,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     float:left;
     width:30%;
     @media all and (max-width: 767px){
-      width:65%;
+      width:62%;
     }
     .nav_action_buttons{
       margin:20px 0 0 0;
@@ -510,17 +512,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin:7.5px 24px 0px;
     position:relative;
     @media all and (max-width: 767px){
-      background: $color-dark-blue;
+
       height:auto;
-      margin:0px;
-      &:before {
-        bottom: 0px;
-        border-bottom:1px solid $color-dark-blue2;
-        content:"";
-        left:0px;
-        position:absolute;
-        width:100%;
-      }
+      margin:0px 0 0 20px;
     }
     a{
       color:#333;
@@ -548,12 +542,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   #hamburger_icon{
     cursor: pointer;
     float:left;
-    height: 20px;
-    margin:7px 3px 0px 10px;
-    padding-right:6%;
+    height: 24px;
+    margin:7px 0px 0px 10px;
     padding-top:3px;
     position:relative;
-    width:26px;
+    width:30px;
     .hamburger_piece{
       position:absolute;
       background:#333;
@@ -788,4 +781,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 
+/*----------------------------------------BIBLE BOOKS---------------------------------*/
 
+.books_summary{
+  background:$color-black-opaque;
+}
