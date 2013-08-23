@@ -372,9 +372,6 @@
     }
   }
   .player_download_button{
-    @media all and (max-width: 767px){
-      display:none;
-    }
     a{
       background: url('icon-download.png') no-repeat;
       background-position:right;
@@ -390,13 +387,17 @@
       &:hover{
         opacity:1;
       }
+      @media all and (max-width: 1075px){
+        background: none;
+        padding-right: 2px;
+      }
+      @media all and (max-width: 767px){
+        display:none;
+      }
     }
   }
   .player_refurl_button{
     width:100%;
-    @media all and (max-width: 767px){
-      display:none;
-    }
     a{
       background: url('icon-refurl.png') no-repeat;
       background-position:right;
@@ -411,6 +412,14 @@
       padding:8px 22px 0 0;
       &:hover{
         opacity:1;
+      }
+      @media all and (max-width: 1075px){
+        background: none;
+        margin-top:15px;
+        width: 90px;
+      }
+      @media all and (max-width: 767px){
+        display:none;
       }
     }
   }

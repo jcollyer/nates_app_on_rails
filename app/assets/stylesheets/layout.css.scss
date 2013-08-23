@@ -195,10 +195,9 @@ a.button,
 .title{
   background: $color-black-opaque;
   border-bottom: 1px solid $color-black-opaque;
-  color:#eee;
   font-size: 200%;
-  padding:10px 0;
   text-align: center;
+  h1{color: rgba(255,255,255,0.4)}
 }
 
 .hide_mobile{
@@ -698,6 +697,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   @media all and (max-width: 767px){
     margin: 20px auto 0px;
     width:310px;
+  }
+  @media all and (max-width: 525px){
+    width: 100%;
+    margin:0px;
   }
   &:hover > .play_mark_large {
     cursor:pointer;
