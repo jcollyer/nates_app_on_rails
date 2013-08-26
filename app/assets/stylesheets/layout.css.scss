@@ -195,6 +195,7 @@ a.button,
 .title{
   background: $color-black-opaque;
   border-bottom: 1px solid $color-black-opaque;
+  color: white;
   font-size: 200%;
   text-align: center;
   h1{color: rgba(255,255,255,0.4)}
@@ -340,7 +341,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     float:left;
     margin-top:3px;
     position:relative;
-    width:19%
+    width:19%;
+    @media all and (max-width: 767px){
+      margin-top:50px;
+    }
   }
 }
 
