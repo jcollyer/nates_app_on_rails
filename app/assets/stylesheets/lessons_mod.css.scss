@@ -127,6 +127,19 @@
   }
 }
 
+.plyer_rewind {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  .player_rewind_text{
+    font-size: 40%;
+    left: 9px;
+    top: 12px;
+    position: absolute;
+  }
+}
+
 .player_prev{
   bottom: 40px;
   left: 10px;
@@ -433,5 +446,8 @@
 }
 .icon-medium-size{
   font-size: 27px;
+}
+.icon-2point2x {
+  font-size: 2.2em;
 }
 

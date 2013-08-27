@@ -94,6 +94,7 @@ $ ->
       solution: "html, flash"
       volume: 0.8
       wmode: "window"
+      smoothPlayBar: false
       errorAlerts: false
       warningAlerts: false
       ready: ->
@@ -147,6 +148,15 @@ $ ->
   $(document).on "click", ".speed-10", ->
     audioDiv = document.getElementById("jp_audio_0")
     trackSpeed = audioDiv.playbackRate = 1.0
+
+  $(document).on "click", ".plyer_rewind", ->
+    audioDiv = document.getElementById("jp_audio_0")
+    currentTime = audioDiv.currentTime
+    currentTimeRewind = currentTime - 30
+    # alert currentTime
+    # alert currentTimeRewind
+    audioDiv.currentTime = currentTimeRewind
+
 
   # Keyboard Control Overides
   $(document.documentElement).keydown (event) ->
