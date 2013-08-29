@@ -149,7 +149,7 @@ $ ->
     audioDiv = document.getElementById("jp_audio_0")
     trackSpeed = audioDiv.playbackRate = 1.0
 
-  $(document).on "click", ".plyer_rewind", ->
+  $(document).on "click", ".player_rewind", ->
     audioDiv = document.getElementById("jp_audio_0")
     currentTime = audioDiv.currentTime
     currentTimeRewind = currentTime - 30

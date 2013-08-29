@@ -8,16 +8,22 @@
     <div id="jp_container_1" class="jp-audio small-12 large-7 columns" itemscope itemtype="http://schema.org/Lesson">
       <div class="jp-controls">
         <div class="lesson_mod_image">
-          <div class="plyer_rewind icon-undo color-ccc icon-2point2x"><span class="player_rewind_text">30</span></div>
           <div class="current_lessen_image">
             <img src="/assets/placeholder.png" class="mod_img" itemprop="image">
           </div>
           <a href="javascript:;" class="jp-play" tabindex="1">
-            <div class="play_mark_small">&nbsp;</div>
+            <div class="player_play">
+
+              <div class="button-play"></div>
+
+            </div>
           </a>
           <img src="/assets/placeholder.png" class="mod_img">
           <a href="javascript:;" class="jp-pause" tabindex="1" style="display:none;">
-            <div class="pause_mark_small"></div>
+
+
+            <div class="button-pause"></div>
+
           </a>
 {{!           <div class="player_prev">
             <a href="javascript:;" class="jp-previous" tabindex="1">
@@ -31,20 +37,29 @@
           </div> }}
         </div>
         <div class="lesson_mod_controls">
-          <div class="lesson_mod_time">
-            <div class="jp-duration lesson_duration">&nbsp;</div>
+          <div class="lesson_goback">
+
+            <div class="button-goback player_rewind"></div>
+
           </div>
-          <div class="jp-progress lesson_progress_bar">
-            <div class="jp-seek-bar seek_bar">
-              <div class="jp-play-bar progress_bar">
-                <div class="jp-current-time lesson_current_time">&nbsp;</div>
+          <div class="lesson_progress">
+            <div class="lesson_mod_time">
+              <div class="jp-duration lesson_duration">&nbsp;</div>
+            </div>
+            <div class="jp-progress lesson_progress_bar">
+              <div class="jp-seek-bar seek_bar">
+                <div class="jp-play-bar progress_bar">
+                  <div class="jp-current-time lesson_current_time">&nbsp;</div>
+                </div>
               </div>
             </div>
           </div>
           <div class="lesson_mod_volume">
             <div class="lesson_mod_volume_controls">
               <a href="javascript:;" class="icon-volume jp-mute" tabindex="1" title="mute">
-                <i class="icon-volume-down color-ccc icon-medium-size">&nbsp;</i>
+
+                <div class="button-mute"></div>
+
               </a>
               <a href="javascript:;" class="icon-volume jp-unmute" tabindex="1" title="unmute" style="display:none;">
                 <i class="icon-volume-off color-ccc icon-medium-size">&nbsp;</i>
@@ -55,7 +70,9 @@
             </div>
             <div class="lesson_mod_volume_max">
               <a href="javascript:;" class="icon-volume jp-volume-max" tabindex="1" title="max volume">
-                <i class="icon-volume-up color-ccc icon-medium-size">&nbsp;</i>
+
+                <div class="button-volume-max "></div>
+
               </a>
             </div>
           </div>
