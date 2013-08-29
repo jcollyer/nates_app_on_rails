@@ -5,7 +5,7 @@ Handlebars.registerHelper 'link', (context)->
   thisMp3 = thisThing.get("mp3")
   thisImage = thisThing.get("imageThumbUrl")
   thisRefurl = thisThing.get("refurl")
-  result = '<div class="play_this_teaching play_mark_list"
+  result = '<div class="play_this_teaching button-play-list"
             data-title="'+thisTitle+'"
             data-mp3="'+thisMp3+'"
             data-image="'+thisImage+'"
