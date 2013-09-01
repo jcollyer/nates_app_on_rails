@@ -302,7 +302,15 @@ a.button,
   float:left;
   margin:6px 0px 0 10px;
 }
+.chapter_text{
+  font-family: 'arial';
+  font-size: 11px;
+  // font-weight: bold;
+  // text-transform: none;
+  padding-right:10px;
+  text-decoration: underline;
 
+}
 
 .home{
   // background:$color-white-opaque;
@@ -492,7 +500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
           float:left;
           height:26px;
           margin:0 7px 0 0px;
-          opacity:0.8;
+          opacity:0.9;
           transition: opacity 0.3s ease;
           width:26px;
           &:hover{
@@ -500,11 +508,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
           }
         }
         .ns_twitter{
-          background:url("icon-twitter.png") no-repeat;
           background-size:100%;
         }
         .ns_instagram{
-          background:url("icon-instagram.png") no-repeat;
           background-size:100%;
         }
       }
